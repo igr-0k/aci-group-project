@@ -103,7 +103,8 @@
         fill: rgba(255, 255, 255, 1);
         transition-duration: 500ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+
+       
     }
     
     
@@ -111,8 +112,6 @@
     .footer__connect-link:focus {
       background-color: $second-color;
       fill: #FFFFFF;
-      
-      
     }
 
 .footer__contact {
