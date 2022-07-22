@@ -1,14 +1,17 @@
 .section {
   margin: 0;
 
-  @media screen and (max-width: 767.98px) and (min-width: 1200px) {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+  padding-bottom: 60px;
+  padding-top: 60px;
 
   @include tablet {
     padding-bottom: 40px;
     padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
