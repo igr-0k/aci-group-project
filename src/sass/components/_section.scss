@@ -1,0 +1,30 @@
+.section {
+  margin: 0;
+
+  @media screen and (max-width: 767.98px) and (min-width: 1200px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @include tablet {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+.section__title {
+  font-family: 'Titan One';
+  @include font(400, 34px, 1.15, 0.04);
+  text-transform: uppercase;
+  color: #d41443;
+
+  text-align: center;
+
+  @include tablet {
+    @include font(null, 48px, null, null);
+  }
+
+  @include desktop {
+    @include font(null, 58px, 1.14, 0.06);
+  }
+}
