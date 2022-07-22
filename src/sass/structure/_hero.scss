@@ -1,3 +1,22 @@
 .hero {
   background-color: #ffb8ca;
 }
+
+.hero__title {
+  font-family: 'Titan One', sans-serif;
+  @include font(null, 26px, 1.15, 0.04em);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.accent-logo {
+  color: #d41443;
+}
+
+.hero__btn {
+  font-family: inherit;
+  @include font(null, 8px, 1.25, null);
+  border: none;
+  border-radius: 20px;
+  padding: 9px 14px;
+}
