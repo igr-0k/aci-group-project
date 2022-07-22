@@ -13,6 +13,7 @@
 }
 
 .section__title {
+  font-family: 'Titan One';
   @include font(400, 34px, 1.15, 0.04);
   text-transform: uppercase;
   color: #d41443;
@@ -23,7 +24,7 @@
     @include font(null, 48px, null, null);
   }
 
-  @include desctop {
+  @include desktop {
     @include font(null, 58px, 1.14, 0.06);
   }
 }
