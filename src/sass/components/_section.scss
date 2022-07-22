@@ -16,7 +16,7 @@
   font-family: 'Titan One';
   @include font(400, 34px, 1.15, 0.04);
   text-transform: uppercase;
-  color: #d41443;
+  color: $second-color;
 
   text-align: center;
 
