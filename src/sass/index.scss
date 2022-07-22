@@ -1,12 +1,14 @@
-@import './common';
+@import './base/common';
 
-@import './header';
-@import './mobile-menu';
-@import './hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './customer-reviews';
-@import './contacts';
-@import './footer';
+@import './base/reset';
+
+@import './structure/header';
+@import './structure/mobile-menu';
+@import './structure/hero';
+@import './structure/products';
+@import './structure/about';
+@import './structure/advantages';
+@import './structure/gallery';
+@import './structure/customer-reviews';
+@import './structure/contacts';
+@import './structure/footer';
