@@ -1,0 +1,83 @@
+    .advantages {
+        padding: 20px 0;
+        background-color: #FFF5F6;
+        // .container {}
+    }
+
+    // .advantages__list {}
+
+    .advantages__item {
+        &::before {
+            content: '';
+            display: block;
+            margin-bottom: 16px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+        }
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .advantages__item:nth-child(1)::before {
+        width: 33px;
+        height: 50px;
+        background-image: url(../images/advantages-img/advant-img-mob-1-1x.png);
+        background-size: 33px 50px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages-img/advant-img-mob-1-2x.png);
+        }
+    }
+
+    .advantages__item:nth-child(2)::before {
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/advantages-img/advant-img-mob-2-1x.png);
+        background-size: 50px 50px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages-img/advant-img-mob-2-2x.png);
+        }
+    }
+
+    .advantages__item:nth-child(3)::before {
+        width: 45px;
+        height: 50px;
+        background-image: url(../images/advantages-img/advant-img-mob-3-1x.png);
+        background-size: 45px 50px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages-img/advant-img-mob-3-2x.png);
+        }
+    }
+
+    .advantages__meta {
+        width: 98px;
+        height: 56px;
+        margin-bottom: 4px;
+
+        font-family: 'Titan One';
+        font-style: normal;
+        @include font(400, 36px, 1.15, 0.04em);
+        text-transform: uppercase;
+        color: $second-color;
+    }
+
+    .advantages__text {
+        max-width: 230px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.66;
+        color: $third-color;
+    }
