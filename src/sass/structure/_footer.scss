@@ -5,6 +5,15 @@
 }
 .footer__head {
     margin-bottom: 40px;
+    width: 232px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        width: 340px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        width: 474px;
+      } 
 }
 
 .footer__head-title {
@@ -52,6 +61,15 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 40px;
+    width:232px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        width: 162px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        width: 162px;
+      } 
 }
 
 .footer__connect-item {
