@@ -1,0 +1,133 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  margin: -1px;
+}
+
+.section {
+  margin: 0;
+}
+@media screen and (max-width: 767.98px) and (min-width: 1200px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+.section__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04;
+  text-transform: uppercase;
+  color: #d41443;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.hero {
+  background-color: #ffb8ca;
+}
+
+.wrapper {
+  padding: 0;
+  background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
+}
+
+.masonry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.masonry__item:not(:last-child) {
+  margin-right: 2.53px;
+}
+.masonry__item:nth-child(4) {
+  padding-top: 4px;
+}
+.masonry__item:nth-child(5) {
+  padding-bottom: 35px;
+}
+.masonry .top-image {
+  margin-bottom: 2.52px;
+}/*# sourceMappingURL=index.css.map */
