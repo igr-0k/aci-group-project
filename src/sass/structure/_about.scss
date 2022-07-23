@@ -1,66 +1,76 @@
 .about {
-	background-color: #FFF5F6;
-	padding-bottom: 20px;
+  background-color: #fff5f6;
+  padding-bottom: 20px;
+  background-image: url(/src/images/about-mobile/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 80%;
+  @include tablet {
+    background-image: none;
+  }
 }
 
+.about-img__wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .about__pre-title {
-	font-family: 'Titan One';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: calc(21px / 18px);
-	text-align: center;
-	text-transform: uppercase;
-	color: #FFA5BA;
-	margin-bottom: 15px;
-
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21px / 18px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
 }
 
 .about__description {
-	font-family: 'DM Sans';
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 162%;
-	color: #000000;
-	margin-bottom: 40px;
-	width: 220px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+  margin-bottom: 40px;
+  min-width: 220px;
 }
 
 .about__text {
-	font-family: 'DM Sans';
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 162%;
-	color: #907E82;
-	margin-bottom: 10px;
-	width: 220px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  margin-bottom: 10px;
+  min-width: 220px;
 }
 
 .about-description__wrap {
-	background-image: url(/src/images/about-mobile/about-bg.png);
-	background-repeat: no-repeat;
-	margin-bottom: 20px;
-	text-align: left;
-	// width: 220px;
+  //   background-image: url(/src/images/about-mobile/about-bg.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .about__btn {
-	background: #FFFFFF;
-	border-color: transparent;
-	border-radius: 22px;
-	font-family:'DM Sans';
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 18px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #D41443;
-	padding: 9px 37px;
-
-	
+  background: #ffffff;
+  border-color: transparent;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  padding: 9px 37px;
 }
 
 .about__icon {
-	margin-left: 14px;
+  margin-left: 14px;
 }
