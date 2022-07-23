@@ -1,1 +1,20 @@
-<h1>Hello world!</h1>
+<section class="gallery">
+  <div class="wrapper container">
+    <a href="" class="gallery__link">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery/@1x-gallery-mob.png 1x,
+            ./images/gallery/@2x-gallery-mob.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery/@1x-gallery-mob.png"
+          alt="gallery-img"
+          class="gallery__img"
+        />
+      </picture>
+    </a>
+  </div>
+</section>

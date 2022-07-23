@@ -1,18 +1,47 @@
-<section class="hero container">
-  <h1 class="hero__title">
-    ice cream <br />made with <br /><span class="accent-logo">passion</span>
-  </h1>
-  <a href="#products_section"
-    ><button type="button" class="hero__btn hero__btn--products">
-      Products
-    </button></a
-  >
-  <a href="#products_section"
-    ><button type="button" class="hero__btn">How it’s made?</button></a
-  >
-  <img
-    src="./images/hero-test/ice-cream_mobile.png"
-    alt="ice-cream"
-    width="171"
-  />
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">
+      ice cream <br />made with <br /><span class="accent-logo">passion</span>
+    </h1>
+    <div class="hero-button">
+      <a href="#products_section" class="hero-button__link"
+        ><button type="button" class="hero__btn hero__btn--products">
+          Products
+        </button></a
+      >
+      <a href="#about-section" class="hero-button__link"
+        ><button type="button" class="hero__btn">How it’s made?</button></a
+      >
+    </div>
+    <div class="hero-circle">
+      <picture class="hero-circle__ice-cream">
+        <source
+          srcset="
+            ./images/hero/ice-cream/ice-cream_desktop.png    1x,
+            ./images/hero/ice-cream/ice-cream_desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream/ice-cream_tablet.png    1x,
+            ./images/hero/ice-cream/ice-cream_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream/ice-cream_mobile.png    1x,
+            ./images/hero/ice-cream/ice-cream_mobile@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/hero/ice-cream/ice-cream_mobile.png"
+          alt="ice-cream"
+          width="171"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
