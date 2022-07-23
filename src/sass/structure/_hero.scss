@@ -1,5 +1,8 @@
 .hero {
   background-color: #ffb8ca;
+  z-index: -2;
+  position: relative;
+  height: 502px;
 }
 
 .hero__title {
@@ -7,6 +10,8 @@
   @include font(400, 26px, 1.15, 0.04em);
   text-transform: uppercase;
   color: #fff;
+
+  padding-top: 194px;
 }
 
 .accent-logo {
@@ -24,7 +29,38 @@
   color: #d41443;
 }
 
+.hero-button__link {
+  margin-top: 20px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .hero__btn--products {
   background-color: #d41443;
   color: #fff;
+}
+
+.hero-button {
+  display: flex;
+}
+
+.hero-circle {
+  content: '';
+  position: absolute;
+  top: 83px;
+  left: 11.25%;
+  z-index: -1;
+
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+
+.hero-circle__ice-cream {
+  position: absolute;
+  top: 9px;
+  left: 81px;
 }
