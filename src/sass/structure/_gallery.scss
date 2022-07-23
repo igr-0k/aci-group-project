@@ -1,0 +1,30 @@
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
+}
+.wrapper {
+  padding: 0;
+}
+
+.masonry {
+  //   height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   gap: 8px;
+
+  &__item:not(:last-child) {
+    margin-right: 2.53px;
+  }
+
+  &__item:nth-child(4) {
+    padding-top: 4px;
+  }
+
+  &__item:nth-child(5) {
+    padding-bottom: 35px;
+  }
+
+  .top-image {
+    margin-bottom: 2.52px;
+  }
+}
