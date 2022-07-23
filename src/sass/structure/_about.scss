@@ -4,34 +4,51 @@
 }
 
 
-.about__description {
+.about__pre-title {
+	font-family: 'Titan One';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: calc(21px / 18px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFA5BA;
+	margin-bottom: 15px;
 
+}
+
+.about__description {
+	font-family: 'DM Sans';
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 162%;
 	color: #000000;
 	margin-bottom: 40px;
+	width: 220px;
 }
 
 .about__text {
+	font-family: 'DM Sans';
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 162%;
 	color: #907E82;
+	margin-bottom: 10px;
+	width: 220px;
 }
-
 
 .about-description__wrap {
 	background-image: url(/src/images/about-mobile/about-bg.png);
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
 	text-align: left;
+	// width: 220px;
 }
 
 .about__btn {
 	background: #FFFFFF;
 	border-color: transparent;
 	border-radius: 22px;
+	font-family:'DM Sans';
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 18px;
@@ -39,5 +56,11 @@
 	align-items: center;
 	text-align: center;
 	color: #D41443;
+	padding: 9px 37px;
+
 	
+}
+
+.about__icon {
+	margin-left: 14px;
 }
