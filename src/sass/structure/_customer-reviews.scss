@@ -63,6 +63,7 @@
   width: 100%;
   padding: 42px 50px 18px 42px;
   margin-bottom: 15px;
+ 
 }
 
 .reviews__wrap::before {
@@ -82,10 +83,8 @@
  font-size: 12px;
  line-height: 2.55;
   background: repeating-linear-gradient(
-    #fafafa 0px,
-    #fafafa 31px,
-    #e1e1e1 0px,
-    #e1e1e1 1px
+    #E1E1E1 0px, #E1E1E1 1px, 
+    #FAFAFA 0px,  #FAFAFA 31px
    );
 }
 .reviews__dot {
