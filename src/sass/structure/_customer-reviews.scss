@@ -70,11 +70,12 @@
   display: block;
   width: 54px;
   height: 40px;
-  background-image: url(../images/icon.svg#icon-quote);
+  background-image: url(../images/icon.svg);
   fill: #e1e1e1;
   position: absolute;
   top: 28px;
   left: 55px;
+
 }
 .reviews__text {
  font-weight: 500;
@@ -121,5 +122,8 @@
   margin-right: 10px;
 }
 .reviews__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
   margin-bottom: 16px;
 }
