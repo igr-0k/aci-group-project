@@ -52,6 +52,8 @@
   width: 85px;
   height: 85px;
   margin-bottom: 33px;
+  margin-left: auto;
+  margin-right: auto;
  
 }
 
@@ -68,13 +70,16 @@
   display: block;
   width: 54px;
   height: 40px;
-  background-image: url(./images/icon.svg#icon-quote);
+  background-image: url(../images/icon.svg#icon-quote);
   fill: #e1e1e1;
   position: absolute;
   top: 28px;
   left: 55px;
 }
 .reviews__text {
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 2.55;
   background: repeating-linear-gradient(
     #e1e1e1 0px,
     #e1e1e1 1px,
