@@ -617,22 +617,12 @@ input[type=checkbox]:checked ~ .products__article {
   padding: 0;
 }
 
-.masonry {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery__link {
+  width: 100%;
 }
-.masonry__item:not(:last-child) {
-  margin-right: 2.53px;
-}
-.masonry__item:nth-child(4) {
-  padding-top: 4px;
-}
-.masonry__item:nth-child(5) {
-  padding-bottom: 35px;
-}
-.masonry .top-image {
-  margin-bottom: 2.52px;
+
+.gallery__img {
+  width: 100%;
 }
 
 .section {
