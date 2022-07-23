@@ -3,7 +3,6 @@
   z-index: -2;
   position: relative;
   height: 502px;
-
   overflow: hidden;
 }
 
@@ -51,18 +50,15 @@
   content: '';
   position: absolute;
   top: 83px;
-  left: 11.25%;
+  left: 36px;
   z-index: -1;
 
   width: 345px;
   height: 345px;
   border-radius: 50%;
   background-color: #ffa5ba;
-}
 
-@media screen and(min-width: 390px) and (max-width: 767.98px) {
-  .hero-circle {
-    // left: calc(100% - 345px);
+  @media screen and(min-width: 426px) and (max-width: 767.98px) {
     left: 50%;
     transform: translateX(-50%);
   }
