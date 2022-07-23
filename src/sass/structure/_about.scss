@@ -7,6 +7,9 @@
   background-position-y: 80%;
   @include tablet {
     background-image: none;
+    // .container {
+    //   display: flex;
+    // }
   }
 }
 
@@ -48,11 +51,7 @@
 }
 
 .about-description__wrap {
-  //   background-image: url(/src/images/about-mobile/about-bg.png);
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
   text-align: left;
-  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -69,8 +68,21 @@
   text-align: center;
   color: #d41443;
   padding: 9px 37px;
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 40px;
+  }
 }
 
 .about__icon {
   margin-left: 14px;
+}
+
+.about-content__wrap {
+  @include tablet {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+  }
 }
