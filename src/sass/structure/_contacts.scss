@@ -19,6 +19,9 @@
   &:last-child {
     margin-bottom: 32px;
   }
+  &:nth-child(even) .contacts-list__horeca {
+    background-color: #c2e297;
+  }
 }
 .contacts-btn {
   font-family: 'DM Sans';
@@ -31,10 +34,13 @@
 
   &:hover,
   &:focus {
-    background-color: #FFA5BA
+    background-color: #ffa5ba;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
-
 
 .btn-second {
   background-color: $first-color;
@@ -42,7 +48,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ECEBEB
+    background-color: #ecebeb;
   }
 }
 
