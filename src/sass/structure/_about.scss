@@ -1,43 +1,39 @@
 .about {
-	background-color: #FFF5F6;
-	padding-bottom: 20px;
+  background-color: #fff5f6;
+  padding-bottom: 20px;
 }
 
-
 .about__description {
-
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 162%;
-	color: #000000;
-	margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+  margin-bottom: 40px;
 }
 
 .about__text {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 162%;
-	color: #907E82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
 }
 
-
 .about-description__wrap {
-	background-image: url(/src/images/about-mobile/about-bg.png);
-	background-repeat: no-repeat;
-	margin-bottom: 20px;
-	text-align: left;
+  background-image: url(/src/images/about-mobile/about-bg.png);
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .about__btn {
-	background: #FFFFFF;
-	border-color: transparent;
-	border-radius: 22px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 18px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #D41443;
-	
+  background: #ffffff;
+  border-color: transparent;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
 }
