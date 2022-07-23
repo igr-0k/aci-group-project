@@ -2,9 +2,6 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  @include mobile {
-    max-width: 480px;
-  }
 
   @include mobile {
     max-width: 480px;
