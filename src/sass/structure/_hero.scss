@@ -1,5 +1,10 @@
 .hero {
   background-color: #ffb8ca;
+  z-index: -2;
+  position: relative;
+  height: 502px;
+
+  overflow: hidden;
 }
 
 .hero__title {
@@ -7,6 +12,8 @@
   @include font(400, 26px, 1.15, 0.04em);
   text-transform: uppercase;
   color: #fff;
+
+  margin-top: 194px;
 }
 
 .accent-logo {
@@ -24,7 +31,45 @@
   color: #d41443;
 }
 
+.hero-button__link {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .hero__btn--products {
   background-color: #d41443;
   color: #fff;
+}
+
+.hero-button {
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero-circle {
+  content: '';
+  position: absolute;
+  top: 83px;
+  left: 11.25%;
+  z-index: -1;
+
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+
+@media screen and(min-width: 390px) and (max-width: 767.98px) {
+  .hero-circle {
+    // left: calc(100% - 345px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.hero-circle__ice-cream {
+  position: absolute;
+  top: 9px;
+  left: 81px;
 }
