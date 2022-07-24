@@ -16,18 +16,13 @@
   }
 }
 
-.logo {
-  position: fixed;
-  top: 8px;
-  left: 0;
-}
-
 .mob-menu-close-btn {
   position: absolute;
   top: 20px;
   right: 0;
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 // .menu-close-btn:hover .current {
@@ -49,7 +44,7 @@
   top: 0;
   right: 0;
   padding-top: 60px;
-  width: 250px;
+  width: 100vw;
   height: 100vh;
   background-color: #e17992;
   z-index: 2;
@@ -63,9 +58,11 @@
   pointer-events: none;
 }
 
-.mob-menu-wrap.is-hidden .mob-menu {
-  transform: translateX(100%);
-  transition: transform 300ms linear;
+.mob-menu-wrap.is-hidden {
+  & .mob-menu {
+    transform: translateX(100%);
+    transition: transform 300ms linear;
+  }
 }
 
 .mob-menu-wrap .mob-menu__link {

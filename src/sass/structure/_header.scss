@@ -1,10 +1,12 @@
 .header {
   @include mobile {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
     z-index: 2;
+  }
+  @include desktop {
   }
 }
 
@@ -15,16 +17,21 @@
   padding-top: 8px;
 
   @include tablet {
-    padding-top: 52px;
+    padding-top: 32px;
   }
   @include desktop {
-    padding-top: 52px;
+    padding-top: 37px;
     justify-content: flex-start;
+    align-items: center;
   }
 }
 
+.nav {
+  margin-left: 128px;
+}
+
 .logo {
-  display: block;
+  display: inline-block;
   width: 199px;
   height: 50px;
 }
@@ -33,7 +40,7 @@
   display: none;
   @include desktop {
     display: flex;
-    margin-left: 128px;
+
     .site-nav__link.current {
       color: $second-color;
     }
@@ -41,7 +48,7 @@
 }
 
 .site-nav__item {
-  position: relative;
+  height: 50px;
   &:not(:last-child) {
     margin-right: 35px;
   }
@@ -50,9 +57,8 @@
 .order-link {
   display: none;
   @include desktop {
-    display: inline-block;
-    margin-left: auto;
     display: flex;
+    margin-left: 141px;
     width: 159px;
     min-height: 44px;
     border-radius: 22px;
