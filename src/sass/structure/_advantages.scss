@@ -11,21 +11,39 @@
   @include desktop {
     padding: 40px 0 100px;
   }
+
+  .container {
+    padding-right: 70px;
+  }
 }
 
 .advantages__list {
+  width: 100%;
+  align-content: start;
+
   @include tablet {
-    display: grid;
-    grid-template-columns: 180px 162px 159px;
-    // grid-gap: 4px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;
+    width: max-content;
+  }
+
+  @include desktop {
+    column-gap: 115px;
   }
 }
 
 .advantages__item {
-  align-content: start;
+  align-content: left;
 
   @include tablet {
-    grid-column: span 4px span 22px;
+    width: 162px;
+    flex-basis: calc((100% - 44px) /3);
+  }
+
+  @include desktop {
+    width: 288px;
+    flex-basis: calc((100% - 230px) /3);
   }
 
   &::before {
@@ -165,7 +183,7 @@
 }
 
 .advantages__meta {
-  width: 98px;
+  width: 100%;
   height: 56px;
   margin-bottom: 4px;
 
@@ -175,26 +193,27 @@
   text-transform: uppercase;
   text-align: left;
   color: $second-color;
-
+  transition: color 250ms linear;
 
   @include tablet {
-    // width: auto;
     margin-bottom: 13px;
     @include font(null, 48px, null, null);
     text-transform: none;
   }
 
-
   @include desktop {
-    // width: ;
+    height: 65px;
     margin-bottom: 16px;
     @include font(null, 58px, null, null);
-    text-align: right;
+  }
+
+  .advantages__item:hover & {
+    color: $fourth-color;
   }
 }
 
 .advantages__text {
-  max-width: 230px;
+  max-width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
   @include font(700, 12px, 1.7, 0.02em);
