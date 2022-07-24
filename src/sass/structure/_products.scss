@@ -285,8 +285,19 @@
 .products__article1,
 .products__article2,
 .products__article3 {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products__article1,
+.products__article2,
+.products__article3 {
   opacity: 1;
+  visibility: visible;
   margin-top: 25px;
+
+  transition: visibility 300ms linear;
 }
 
 .products__consist-list {
