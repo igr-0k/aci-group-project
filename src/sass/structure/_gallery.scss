@@ -1,3 +1,8 @@
+.gallery {
+  padding-bottom: 60px;
+  background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
+}
+
 @media screen and (min-width: 320px) {
   .wrapper {
     padding: 0;
@@ -9,7 +14,7 @@
     width: 320px;
     margin: 0 auto;
 
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     .grid__item-1 {
       position: absolute;
@@ -78,7 +83,7 @@
     height: 327px;
     width: 768px;
     margin: 0 auto;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     .grid__item-1 {
       position: absolute;
@@ -143,12 +148,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 120px;
+  }
   .grid {
     position: relative;
     height: 430px;
     width: 1013px;
     margin: 0 auto;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     .grid__item-1 {
       position: absolute;
