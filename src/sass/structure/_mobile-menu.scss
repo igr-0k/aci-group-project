@@ -1,5 +1,5 @@
 .menu-btn {
-  position: fixed;
+  position: absolute;
   top: 19px;
   right: 20px;
   padding: 0;
@@ -7,7 +7,7 @@
   border-color: transparent;
   background-color: transparent;
   @include tablet {
-    position: fixed;
+    display: block;
     top: 46px;
     right: 224px;
   }
@@ -35,6 +35,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  max-width: 480px;
   // background-color: rgba($color: #000000, $alpha: 0.2);
   transition: opacity 500ms linear, visibility 500ms linear;
 }

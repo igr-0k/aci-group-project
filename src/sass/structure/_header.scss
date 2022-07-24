@@ -6,7 +6,13 @@
     background-color: transparent;
     z-index: 2;
   }
+  @include tablet {
+    padding-top: 32px;
+    display: flex;
+  }
   @include desktop {
+    padding-top: 37px;
+    display: flex;
   }
 }
 
@@ -17,10 +23,8 @@
   padding-top: 8px;
 
   @include tablet {
-    padding-top: 32px;
   }
   @include desktop {
-    padding-top: 37px;
     justify-content: flex-start;
     align-items: center;
   }
@@ -54,11 +58,35 @@
   }
 }
 
+.order-link-wrap {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 .order-link {
   display: none;
+  @include tablet {
+    display: inline;
+    text-align: center;
+    padding: 10px 0;
+    width: 159px;
+    min-height: 44px;
+    border-radius: 22px;
+    background-color: $first-color;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    justify-content: center;
+    color: $second-color;
+  }
   @include desktop {
-    display: flex;
-    margin-left: 141px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: auto;
     width: 159px;
     min-height: 44px;
     border-radius: 22px;
