@@ -68,6 +68,7 @@
 }
 
 .reviews__wrap {
+  position: relative;
   background-color: #fafafa;
   position: relative;
   width: 100%;
@@ -97,6 +98,8 @@
    ); 
 }
 .reviews__text {
+  position: absolute;
+  top: 47px;
  font-weight: 500;
  font-size: 12px;
  line-height: 2.55;
