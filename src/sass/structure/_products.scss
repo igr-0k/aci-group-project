@@ -249,7 +249,9 @@
   margin-bottom: 32px;
 }
 
-.products__btn {
+.products__btn1,
+.products__btn2,
+.products__btn3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,18 +282,11 @@
   fill: $second-color;
 }
 
-.products__article,
-input[type='checkbox'] {
-  display: none;
-  scale: 0%;
-}
-
-input[type='checkbox']:checked ~ .products__article {
-  display: block;
-  scale: 100%;
+.products__article1,
+.products__article2,
+.products__article3 {
+  opacity: 1;
   margin-top: 25px;
-
-  @include transitions(scale);
 }
 
 .products__consist-list {
