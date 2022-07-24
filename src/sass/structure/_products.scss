@@ -101,13 +101,13 @@
   background-size: cover;
 
   @include tablet {
-    top: -7.5%;
+    top: -30px;
     width: 224px;
     height: 224px;
   }
 
   @include desktop {
-    top: -13.5%;
+    top: -60px;
     width: 368px;
     height: 394px;
   }
