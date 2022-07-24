@@ -249,7 +249,9 @@
   margin-bottom: 32px;
 }
 
-.products__btn {
+.products__btn1,
+.products__btn2,
+.products__btn3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,18 +282,22 @@
   fill: $second-color;
 }
 
-.products__article,
-input[type='checkbox'] {
+.products__article1,
+.products__article2,
+.products__article3 {
   display: none;
-  scale: 0%;
+  opacity: 0;
+  visibility: hidden;
 }
 
-input[type='checkbox']:checked ~ .products__article {
-  display: block;
-  scale: 100%;
+.products__article1,
+.products__article2,
+.products__article3 {
+  opacity: 1;
+  visibility: visible;
   margin-top: 25px;
 
-  @include transitions(scale);
+  transition: visibility 300ms linear;
 }
 
 .products__consist-list {
