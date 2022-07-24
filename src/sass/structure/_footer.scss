@@ -2,6 +2,14 @@
     background-color: #FFF5F6;
     padding-top: 20px;
     padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        padding-top: 60.5px;
+        padding-bottom: 60px;
+      } 
 }
 .footer__head {
     margin-bottom: 40px;
@@ -15,11 +23,33 @@
         width: 474px;
       } 
 }
-// -----------------------------------------------------TRY----------------------------------------------
-// .footer-main {
-//     display: flex;
-// }
-// -----------------------------------------------------TRY----------------------------------------------
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        
+      }
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+}
+
+.add {
+    margin-top: 0px;
+    @media screen and (min-width: 768px) {
+        margin-top: 80px; 
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 0px; 
+      }
+}
+
+
 .footer__head-title {
     font-family: 'Titan One';
     @include font(400, 18px, 1.17, 0.04);
@@ -49,13 +79,13 @@
     width: 200px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
+       
         @include font(400, 48px, 1.15, 0.06);
         width: 340px;
       }
 
       @media screen and (min-width: 1200px) {
-        margin-bottom: 16px;
+        
         @include font(400, 58px, 1.14, 0.06);
         width: 474px;
       }
@@ -68,11 +98,11 @@
     
    
     @media screen and (min-width: 768px) {
-        margin-bottom: 0px;
+        margin-bottom: 40px;
         
       }
       @media screen and (min-width: 1200px) {
-        margin-bottom: 0px;
+        margin-bottom: 40px;
         
       } 
 }
