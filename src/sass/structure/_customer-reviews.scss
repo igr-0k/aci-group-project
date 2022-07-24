@@ -90,25 +90,25 @@
 
 }
 
-// .reviews__row{
-//   background: repeating-linear-gradient(
-//     #E1E1E1 0px, #E1E1E1 1px, 
-//     #FAFAFA 0px,  #FAFAFA 31px
-//    );
+.reviews__row{
+  background: repeating-linear-gradient(
+    #E1E1E1 0px, #E1E1E1 1px, 
+    #FAFAFA 0px,  #FAFAFA 31px
+   );
   
-// }
+}
 .reviews__text {
   font-weight: 500;
  font-size: 12px;
  line-height: 2.59;
  
 }
-.reviews__text::after{
-   background: repeating-linear-gradient(
-    #E1E1E1 0px, #E1E1E1 1px, 
-    #FAFAFA 0px,  #FAFAFA 31px
-   );
-}
+// .reviews__text::after{
+//    background: repeating-linear-gradient(
+//     #E1E1E1 0px, #E1E1E1 1px, 
+//     #FAFAFA 0px,  #FAFAFA 31px
+//    );
+// }
 .reviews__dot {
   display: flex;
   justify-content: center;
