@@ -9,8 +9,13 @@
     display: flex;
   }
   @include desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     padding-top: 37px;
     display: flex;
+    background-color: rgba(255, 184, 202, 0.5);
   }
 }
 
@@ -19,7 +24,9 @@
   align-items: center;
   justify-content: space-between;
   @include tablet {
+    justify-content: space-between;
   }
+
   @include desktop {
     justify-content: flex-start;
     align-items: center;
@@ -28,6 +35,7 @@
 
 .nav {
   margin-left: 128px;
+  transform: unset;
 }
 
 .logo {
@@ -55,35 +63,19 @@
 }
 
 .order-link-wrap {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+  @include desktop {
+    margin-left: auto;
+  }
 }
 
 .order-link {
   display: none;
   @include tablet {
-    display: inline;
-    text-align: center;
-    padding: 10px 0;
-    width: 159px;
-    min-height: 44px;
-    border-radius: 22px;
-    background-color: $first-color;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    justify-content: center;
-    color: $second-color;
-  }
-  @include desktop {
     display: inline-block;
+    margin-left: 32px;
     text-align: center;
-    padding: 10px 0;
-    margin-left: auto;
-    width: 159px;
+    padding: 12px 0;
+    width: 160px;
     min-height: 44px;
     border-radius: 22px;
     background-color: $first-color;
