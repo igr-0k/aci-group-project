@@ -1,11 +1,25 @@
 .menu-btn {
-  width: 20px;
-  height: 12px;
+  position: fixed;
+  top: 19px;
+  right: 0;
+  padding: 0;
+  border: 0px;
   border-color: transparent;
   background-color: transparent;
+  @include tablet {
+    position: fixed;
+    top: 46px;
+    right: 224px;
+  }
   @include desktop {
     display: none;
   }
+}
+
+.logo {
+  position: fixed;
+  top: 8px;
+  left: 0;
 }
 
 .mob-menu-close-btn {
@@ -22,10 +36,11 @@
 
 .mob-menu-wrap {
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.2);
+  // background-color: rgba($color: #000000, $alpha: 0.2);
   transition: opacity 500ms linear, visibility 500ms linear;
 }
 

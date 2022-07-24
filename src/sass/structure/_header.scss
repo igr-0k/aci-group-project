@@ -1,14 +1,25 @@
 .header {
+  @include mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+  }
+}
+
+.wrap-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 8px;
-  background-color: #ffb8ca;
+
   @include tablet {
     padding-top: 52px;
   }
   @include desktop {
     padding-top: 52px;
+    justify-content: flex-start;
   }
 }
 
@@ -20,7 +31,7 @@
 
 .site-nav {
   display: none;
-  @include tablet {
+  @include desktop {
     display: flex;
     margin-left: 128px;
     .site-nav__link.current {
@@ -36,10 +47,23 @@
   }
 }
 
-.order {
+.order-link {
   display: none;
   @include desktop {
+    display: inline-block;
     margin-left: auto;
+    display: flex;
+    width: 159px;
+    min-height: 44px;
+    border-radius: 22px;
+    background-color: $first-color;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    justify-content: center;
+    color: $second-color;
   }
 }
 
