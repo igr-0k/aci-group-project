@@ -15,7 +15,11 @@
         width: 474px;
       } 
 }
-
+// -----------------------------------------------------TRY----------------------------------------------
+// .footer-main {
+//     display: flex;
+// }
+// -----------------------------------------------------TRY----------------------------------------------
 .footer__head-title {
     font-family: 'Titan One';
     @include font(400, 18px, 1.17, 0.04);
@@ -61,14 +65,15 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 40px;
-    width: 280px;
+    
+   
     @media screen and (min-width: 768px) {
         margin-bottom: 0px;
-        width: 162px;
+        
       }
       @media screen and (min-width: 1200px) {
         margin-bottom: 0px;
-        width: 162px;
+        
       } 
 }
 
