@@ -50,6 +50,10 @@
 
 .reviews__slider .slick-dots li.slick-active button {
   background-image: url(../images/reviews/home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 0;
 }
 .reviews__item {
   text-align: center;
