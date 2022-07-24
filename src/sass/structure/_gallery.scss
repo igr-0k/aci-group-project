@@ -1,14 +1,221 @@
 .gallery {
+  padding-bottom: 60px;
   background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
 }
-.wrapper {
-  padding: 0;
+
+@media screen and (min-width: 320px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .grid {
+    position: relative;
+    height: 136px;
+    width: 320px;
+    margin: 0 auto;
+
+    // outline: 1px solid tomato;
+
+    .grid__item-1 {
+      position: absolute;
+      top: 33%;
+      left: 0;
+    }
+
+    .grid__item-2 {
+      position: absolute;
+      top: 20.7%;
+      left: 14.4%;
+    }
+
+    .grid__item-3 {
+      position: absolute;
+      bottom: 13.5%;
+      left: 14.4%;
+    }
+
+    .grid__item-4 {
+      position: absolute;
+      top: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-5 {
+      position: absolute;
+      bottom: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-6 {
+      position: absolute;
+      top: 23%;
+      left: 57.5%;
+    }
+
+    .grid__item-7 {
+      position: absolute;
+      bottom: 10.7%;
+      left: 57.5%;
+    }
+
+    .grid__item-8 {
+      position: absolute;
+      top: 15.3%;
+      left: 72%;
+    }
+
+    .grid__item-9 {
+      position: absolute;
+      bottom: 18.4%;
+      left: 72%;
+    }
+
+    .grid__item-10 {
+      position: absolute;
+      top: 36%;
+      left: 86.4%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    position: relative;
+    height: 327px;
+    width: 768px;
+    margin: 0 auto;
+    // outline: 1px solid tomato;
+
+    .grid__item-1 {
+      position: absolute;
+      top: 33%;
+      left: 0;
+    }
+
+    .grid__item-2 {
+      position: absolute;
+      top: 20.7%;
+      left: 14.4%;
+    }
+
+    .grid__item-3 {
+      position: absolute;
+      bottom: 13.5%;
+      left: 14.4%;
+    }
+
+    .grid__item-4 {
+      position: absolute;
+      top: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-5 {
+      position: absolute;
+      bottom: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-6 {
+      position: absolute;
+      top: 23%;
+      left: 57.5%;
+    }
+
+    .grid__item-7 {
+      position: absolute;
+      bottom: 10.7%;
+      left: 57.5%;
+    }
+
+    .grid__item-8 {
+      position: absolute;
+      top: 15.3%;
+      left: 72%;
+    }
+
+    .grid__item-9 {
+      position: absolute;
+      bottom: 18.4%;
+      left: 72%;
+    }
+
+    .grid__item-10 {
+      position: absolute;
+      top: 36%;
+      left: 86.4%;
+    }
+  }
 }
 
-.gallery__link {
-  width: 100%;
-}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 120px;
+  }
+  .grid {
+    position: relative;
+    height: 430px;
+    width: 1013px;
+    margin: 0 auto;
+    // outline: 1px solid tomato;
 
-.gallery__img {
-  width: 100%;
+    .grid__item-1 {
+      position: absolute;
+      top: 33%;
+      left: 0;
+    }
+
+    .grid__item-2 {
+      position: absolute;
+      top: 20.7%;
+      left: 14.4%;
+    }
+
+    .grid__item-3 {
+      position: absolute;
+      bottom: 13.5%;
+      left: 14.4%;
+    }
+
+    .grid__item-4 {
+      position: absolute;
+      top: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-5 {
+      position: absolute;
+      bottom: 0;
+      left: 28.8%;
+    }
+
+    .grid__item-6 {
+      position: absolute;
+      top: 23%;
+      left: 57.5%;
+    }
+
+    .grid__item-7 {
+      position: absolute;
+      bottom: 10.7%;
+      left: 57.5%;
+    }
+
+    .grid__item-8 {
+      position: absolute;
+      top: 15.3%;
+      left: 72%;
+    }
+
+    .grid__item-9 {
+      position: absolute;
+      bottom: 18.4%;
+      left: 72%;
+    }
+
+    .grid__item-10 {
+      position: absolute;
+      top: 36%;
+      left: 86.4%;
+    }
+  }
 }
