@@ -1,11 +1,12 @@
 .menu-btn {
-  position: absolute;
+  position: fixed;
   top: 19px;
   right: 20px;
   padding: 0;
   border: 0px;
   border-color: transparent;
   background-color: transparent;
+  z-index: 2;
   @include tablet {
     display: block;
     top: 46px;
