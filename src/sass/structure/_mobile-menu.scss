@@ -8,9 +8,7 @@
   background-color: transparent;
   z-index: 2;
   @include tablet {
-    display: block;
-    top: 46px;
-    right: 224px;
+    position: static;
   }
   @include desktop {
     display: none;
@@ -20,7 +18,7 @@
 .mob-menu-close-btn {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -32,26 +30,35 @@
 
 .mob-menu-wrap {
   position: fixed;
-  z-index: 2;
   top: 0;
+  right: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   max-width: 480px;
   // background-color: rgba($color: #000000, $alpha: 0.2);
-  transition: opacity 500ms linear, visibility 500ms linear;
+  transition: opacity 300ms linear, visibility 500ms linear;
+  @include tablet {
+    width: 254px;
+  }
 }
 
 .mob-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
   padding-top: 60px;
   width: 100vw;
   height: 100vh;
+  max-width: 480px;
   background-color: #e17992;
   z-index: 2;
   transform: translateX(0);
   transition: transform 300ms linear;
+  @include tablet {
+    padding-top: 60px;
+    width: 254px;
+    height: 1020px;
+    transform: translateX(0);
+    transition: transform 300ms linear;
+  }
 }
 
 .is-hidden {
