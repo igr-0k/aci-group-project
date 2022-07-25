@@ -74,7 +74,7 @@
  
 }
 
-.reviews__wrap::before {
+.reviews__quoterap::after {
   content: '';
   display: block;
   width: 54px;
@@ -84,6 +84,7 @@
   position: absolute;
   top: 28px;
   left: 55px;
+  z-index: -1;
 
 }
 
@@ -97,10 +98,12 @@
    
 }
 .reviews__text {
+  position: relative;
       font-size: 12px;
     font-weight: 500;
     line-height: 2.59;
     letter-spacing: 0.03em;
+    z-index: 1;
   }
 
 
