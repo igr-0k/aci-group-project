@@ -2,7 +2,7 @@
   background-color: #ffb8ca;
 
   position: relative;
-  height: 502px;
+  height: 444px;
   overflow: hidden;
 
   @include tablet {
@@ -32,7 +32,7 @@
   position: absolute;
   z-index: 1;
 
-  margin-top: 194px;
+  margin-top: 134px;
 
   @include tablet {
     margin-top: 102px;
@@ -78,7 +78,7 @@
 
 .hero-circle {
   position: absolute;
-  top: 83px;
+  top: 23px;
   left: 36px;
 
   width: 345px;
@@ -194,6 +194,10 @@
 }
 
 .hero-description {
+  @include mobile-only {
+    display: none;
+  }
+
   display: flex;
   flex-direction: column;
 
