@@ -175,7 +175,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    right: 90px;
+    right: 40px;
   }
 }
 
@@ -183,11 +183,11 @@
   .modal__circl::before {
     content: '';
     position: absolute;
-    bottom: 120px;
-    right: 40px;
+    bottom: 110px;
+    right: 30px;
     display: block;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background-color: #ffa5ba;
     z-index: -1;
