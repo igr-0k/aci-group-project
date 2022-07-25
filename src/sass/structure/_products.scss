@@ -290,7 +290,7 @@
   }
 }
 
-.icon-arrow-right {
+.icon-arrow {
   display: block;
   width: 30%;
   height: 30%;
@@ -315,7 +315,8 @@
   transition: visibility 300ms linear;
 }
 
-.products__consist-list {
+.products__consist-list,
+.products__consist-list li {
   text-align: left;
   padding-left: 10px;
   list-style: square;
