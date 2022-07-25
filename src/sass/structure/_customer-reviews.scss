@@ -95,10 +95,10 @@
   width: 100%;
   padding: 43px 50px 0px 50px;
    @include tablet{
-   padding: 37px 6px 0px 6px; 
+   padding: 36px 6px 0px 6px; 
   }
   @include desktop{
-    padding: 43px 50px 0px 50px;
+   padding: 43px 72px 0 72px
   }
  
 }
@@ -117,9 +117,10 @@
   @include tablet{
     width: 60px;
     top: 20px;
-    left: 6px;
+    left: 8px;
   }
   @include desktop{
+    width: 54px;
     top: 32px;
     left: 72px;
   }
@@ -135,16 +136,16 @@
  #E1E1E1 0px, #E1E1E1 31px );
      @include tablet{
     padding-left: 51px;
-    padding-right: 55px;
+    padding-right: 44px;
     padding-bottom: 32px;
   }
   @include desktop{
-    padding-left: 72px;
-    padding-right: 74px;
+    padding-left: 36px;
+    padding-right: 35px;
   }
 }
 .reviews__text {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   position: relative;
       font-size: 12px;
     font-weight: 500;
@@ -204,6 +205,7 @@
   margin-right: 10px;
 }
 .reviews__name {
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
