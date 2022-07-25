@@ -3,11 +3,35 @@
     <p class="about__pre-title">tradition and love</p>
     <h2 class="section__title">how it’s made?</h2>
     <div class="about-content__wrap">
-      <img
-        class="about__img"
-        src="/src/images/about-mobile/cow-mob-1x.png"
-        alt="Cow with milk"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /src/images/about-desk/cow-desk-1x.png 1x,
+            /src/images/about-desk/cow-desk-2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /src/images/about-desk/cow-tab-1x.png 1x,
+            /src/images/about-desk/cow-tab-2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /src/images/about-mobile/cow-mob-1x.png 1x,
+            /src/images/about-mobile/cow-mob-2x.png 2x
+          "
+        />
+
+        <img
+          class="about__img"
+          src="/src/images/about-desk/cow-tab-2x.png"
+          alt="Cow with milk"
+        />
+      </picture>
 
       <div class="about-description__wrap">
         <p class="about__description">

@@ -8,12 +8,25 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 80%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/about-mobile/milk-mob-2x.png);
+  }
+
   @include tablet {
     background-image: none;
   }
 
   @include desktop {
     background-image: url(/src/images/about-desk/milk-desk-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/about-desk/milk-desk-2x.png);
+    }
   }
 }
 
