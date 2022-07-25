@@ -16,8 +16,8 @@
 
 .reviews__slider{
   @include tablet{
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 74px;
+    padding-right: 74px;
   }
   @include desktop{
     padding-left: 100px;
@@ -94,8 +94,7 @@
   position: relative;
   width: 100%;
   padding: 43px 50px 0px 50px;
-  margin-bottom: 15px;
-  @include tablet{
+   @include tablet{
    padding: 37px 6px 0px 6px; 
   }
   @include desktop{
@@ -135,17 +134,19 @@
      @include tablet{
     padding-left: 51px;
     padding-right: 55px;
+    padding-bottom: 32px;
   }
   @include desktop{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 72px;
+    padding-right: 74px;
   }
 }
 .reviews__text {
+  font-family: sans-serif;
   position: relative;
       font-size: 12px;
     font-weight: 500;
-    line-height: 2.59;
+    line-height: 2.55;
     letter-spacing: 0.04em;
     z-index: 1;
     @include tablet{
@@ -165,6 +166,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+   margin-top: 16px;
   position: relative;
   width: 4px;
   height: 4px;
@@ -172,7 +174,7 @@
   background-color: #c7133e;
   margin-bottom: 16px;
     @include tablet{
-   margin-top: 6px;
+   margin-top: 4px;
   }
   @include desktop{
      margin-top: 16px;
@@ -205,6 +207,6 @@
   line-height: 1.86;
   margin-bottom: 16px;
   @include tablet{
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
