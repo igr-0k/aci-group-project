@@ -4,6 +4,14 @@
     padding-bottom: 0;
     padding-top: 30px;
   padding-bottom: 30px;
+
+  @include tablet{
+    padding-bottom: 40px;
+  }
+  @include desktop{
+     padding-top: 60px;
+     padding-bottom: 60px;
+  }
 }
 .slick-list {
   overflow: hidden;
@@ -61,7 +69,12 @@
   margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
- 
+ @include tablet{
+  margin-bottom: 20px;
+ }
+ @include desktop{
+  margin-bottom: 16px;
+ }
 }
 
 .reviews__wrap {
@@ -69,8 +82,14 @@
   background-color: #fafafa;
   position: relative;
   width: 100%;
-  padding: 42px 50px 0px 50px;
+  padding: 43px 50px 0px 50px;
   margin-bottom: 15px;
+  @include tablet{
+   padding: 37px 6px 0px 6px; 
+  }
+  @include desktop{
+    padding: 43px 50px 0px 50px;
+  }
  
 }
 
@@ -82,9 +101,16 @@
   background-image: url(../images/reviews/quote.svg);
   fill: #e1e1e1;
   position: absolute;
-  top: 28px;
-  left: 55px;
-  
+  top: 30px;
+  left: 53px;
+  @include tablet{
+    top: 20px;
+    left: 6px;
+  }
+  @include desktop{
+    top: 32px;
+    left: 72px;
+  }
 
 }
 
@@ -102,8 +128,16 @@
       font-size: 12px;
     font-weight: 500;
     line-height: 2.59;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     z-index: 1;
+    @include tablet{
+       font-size: 14px;
+      line-height: 2.14;
+    }
+    @include desktop{
+       font-size: 16px;
+      line-height: 1.86;
+    }
   }
 
 
