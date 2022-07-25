@@ -1,22 +1,32 @@
 .about {
+  display: flex;
   background-color: #fff5f6;
   padding-bottom: 20px;
-  background-image: url(/src/images/about-mobile/about-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 80%;
-  @include tablet {
-    background-image: none;
-    // .container {
-    //   display: flex;
-    // }
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    background-image: url(/src/images/about-mobile/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80%;
+    @include tablet {
+      background-image: none;
+    }
+
+    @include desktop {
+      background-image: url(/src/images/about-desk/about-bg-desk.png);
+    }
   }
 }
 
-.about-img__wrap {
-  display: flex;
-  justify-content: center;
+.about__img {
   width: 100%;
+
+  @include desktop {
+    width: 501px;
+    margin-right: 100px;
+  }
 }
 
 .about__pre-title {
@@ -38,6 +48,18 @@
   color: #000000;
   margin-bottom: 40px;
   min-width: 220px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 176%;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
 }
 
 .about__text {
@@ -48,11 +70,21 @@
   color: #907e82;
   margin-bottom: 10px;
   min-width: 220px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about-description__wrap {
   text-align: left;
   width: 100%;
+
+  @include tablet {
+    margin-left: 32px;
+  }
 }
 
 .about__btn {
@@ -73,6 +105,10 @@
   @include tablet {
     margin-top: 40px;
   }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .about__icon {
@@ -84,5 +120,6 @@
     display: flex;
     margin-top: 40px;
     width: 100%;
+    align-items: center;
   }
 }
