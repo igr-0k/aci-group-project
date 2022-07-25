@@ -13,7 +13,7 @@
           >
         </li>
         <li class="hero-button__item">
-          <a href="#about_section" class="hero-button__link"
+          <a href="#about" class="hero-button__link"
             ><button type="button" class="hero__btn">How it’s made?</button></a
           >
         </li>
@@ -21,16 +21,54 @@
     </div>
 
     <div class="hero-container">
-      <ul class="hero-counter list">
-        <li class="hero-counter__item">
-          <p class="hero-counter__meta">16</p>
-          <p class="hero-counter__text">cafes</p>
-        </li>
-        <li class="hero-counter__item">
-          <p class="hero-counter__meta">23</p>
-          <p class="hero-counter__text">food trucks</p>
-        </li>
-      </ul>
+      <div class="hero-counter">
+        <ul class="hero-counter-list list">
+          <li class="hero-counter__item">
+            <div class="hero-counter__circle"></div>
+            <div class="meta-text">
+              <span class="hero-counter__meta">16</span>
+              <p class="hero-counter__text">cafes</p>
+            </div>
+          </li>
+          <li class="hero-counter__item">
+            <div class="hero-counter__circle"></div>
+            <div class="meta-text">
+              <span class="hero-counter__meta">23</span>
+              <p class="hero-counter__text">food trucks</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-description">
+        <p class="hero-description__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button
+          class="hero-description__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="hero__article"
+        >
+          <svg class="icon-arrow">
+            <use
+              class="icon-arrow-open"
+              href="./images/arrows-sprite.svg#arrow-down"
+            ></use>
+            <use
+              class="icon-arrow-close"
+              href="./images/arrows-sprite.svg#arrow-up"
+            ></use>
+          </svg>
+        </button>
+        <div class="hero__article">
+          <p class="hero-description__text-hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+        </div>
+      </div>
 
       <div class="hero-circle">
         <picture class="hero-circle__ice-cream">

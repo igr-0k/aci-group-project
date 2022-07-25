@@ -77,7 +77,6 @@
 }
 
 .hero-circle {
-  content: '';
   position: absolute;
   top: 83px;
   left: 36px;
@@ -138,7 +137,7 @@
   }
 }
 
-.hero-counter {
+.hero-counter-list {
   @include mobile-only {
     display: none;
   }
@@ -147,21 +146,20 @@
   align-items: flex-end;
   gap: 16px;
   padding-top: 92px;
-  padding-right: 10px;
 }
 
 .hero-counter__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: end;
 
-  &::before {
-    content: '';
+  position: relative;
+  width: 43px;
+  height: 44px;
 
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
+  &:last-child {
+    width: 51px;
   }
 }
 
@@ -175,4 +173,80 @@
   font-family: 'DM Sans', sans-serif;
   @include font(400, 8px, 1.25, null);
   color: $first-color;
+}
+
+.hero-counter__circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.meta-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 114px;
+  margin-top: 92px;
+  margin-left: 184px;
+}
+
+.hero-description__text {
+  color: $first-color;
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.5, null);
+
+  margin-bottom: 7px;
+}
+
+.hero-description__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin-bottom: 7px;
+
+  cursor: pointer;
+
+  width: 18px;
+  height: 18px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  @include transitions(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #aaaaaa;
+  }
+
+  & .icon-arrow-close {
+    display: none;
+  }
+
+  &.is-open .icon-arrow-close {
+    display: block;
+  }
+  &.is-open .icon-arrow-open {
+    display: none;
+  }
+}
+
+.hero-description__text-hidden {
+  color: $first-color;
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.5, null);
 }
