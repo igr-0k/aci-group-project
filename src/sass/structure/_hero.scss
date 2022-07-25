@@ -1,5 +1,6 @@
 .hero {
   background-color: #ffb8ca;
+
   position: relative;
   height: 502px;
   overflow: hidden;
@@ -9,6 +10,13 @@
   }
 }
 
+.hero-container {
+  @include tablet {
+    position: relative;
+    width: 100%;
+    height: 416px;
+  }
+}
 .hero__title {
   font-family: 'Titan One', sans-serif;
   @include font(400, 26px, 1.15, 0.04em);
@@ -68,16 +76,11 @@
   }
 }
 
-.hero-circle-first {
+.hero-circle {
   content: '';
   position: absolute;
   top: 83px;
   left: 36px;
-
-  @include tablet {
-    top: 43px;
-    left: 248px;
-  }
 
   width: 345px;
   height: 345px;
@@ -88,9 +91,17 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include tablet {
+    top: 43px;
+    left: 216px;
+
+    width: 335px;
+    height: 335px;
+  }
 }
 
-.hero-circle-first__ice-cream {
+.hero-circle__ice-cream {
   position: absolute;
   top: 9px;
   left: 81px;
@@ -98,28 +109,70 @@
   @include tablet {
     top: 37px;
     left: 74px;
+
+    width: 143px;
+    height: 336px;
   }
 }
 
-.hero-circle-second,
-.hero-circle-third {
+.hero-circle__milk {
   @include mobile-only {
     display: none;
   }
-}
 
-.hero-circle-second__milk {
-  position: absolute;
   @include tablet {
+    position: absolute;
     bottom: 16px;
-    left: 32px;
+    left: 0;
   }
 }
 
-.hero-circle-third__tasty {
-  position: absolute;
-  @include tablet {
-    bottom: 0;
-    right: 32px;
+.hero-circle__tasty {
+  @include mobile-only {
+    display: none;
   }
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.hero-counter {
+  @include mobile-only {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding-top: 92px;
+  padding-right: 10px;
+}
+
+.hero-counter__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.hero-counter__meta {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 28px, 1.14, 0.04em);
+  color: $second-color;
+}
+
+.hero-counter__text {
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.25, null);
+  color: $first-color;
 }
