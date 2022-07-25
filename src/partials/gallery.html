@@ -1,198 +1,266 @@
 <section class="gallery">
-  <div class="wrapper container">
-    <ul class="masonry list">
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+  <div class="container wrapper">
+    <div class="gallery__mob">
+      <img
+        srcset="
+          ./images/gallery/@1x-gallery-mob.png 1x,
+          ./images/gallery/@2x-gallery-mob.png 2x
+        "
+        src="./images/gallery/@1x-gallery-mob.png"
+        alt="Ice Cream picture"
+        class="gallery__mob-img"
+      />
+    </div>
+    <div class="grid">
+      <div class="grid-item grid__item-1">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-1.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-1.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-1.jpg 1x, ./images/@2x-mob-1.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-1.jpg" alt="ice-cream-1" width="44" />
-        </picture>
-      </li>
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-1.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-1.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-1.png"
+              alt="ice-cream on the plate"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-2">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-2.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-2.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-2.jpg 1x, ./images/@2x-mob-2.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/@1x-mob-2.jpg"
-            alt="ice-cream-2"
-            width="44"
-            class="top-image"
-          />
-        </picture>
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-2.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-2.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-2.png"
+              alt="ice-cream-cone"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-3">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-3.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-3.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-3.jpg 1x, ./images/@2x-mob-3.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-3.jpg" alt="ice-cream-3" width="44" />
-        </picture>
-      </li>
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-3.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-3.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-3.png"
+              alt="a lot of ice creams"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-4">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-4.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-4.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-4.jpg 1x, ./images/@2x-mob-4.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/@1x-mob-4.jpg"
-            alt="ice-cream-4"
-            width="90"
-            class="top-image"
-          />
-        </picture>
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-4.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-4.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-4.png"
+              alt=" a lot of ice cream cones"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-5">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-5.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-5.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-5.jpg 1x, ./images/@2x-mob-5.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-5.jpg" alt="ice-cream-5" width="44" />
-        </picture>
-      </li>
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-5.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-5.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-5.png"
+              alt="girl eating ice cream"
+            /> </picture
+        ></a>
+      </div>
+      <div class="grid-item grid__item-6">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-6.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-6.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-6.jpg 1x, ./images/@2x-mob-6.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/@1x-mob-6.jpg"
-            alt="ice-cream-6"
-            width="44"
-            class="top-image"
-          />
-        </picture>
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-6.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-6.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-6.png"
+              alt="ice cream with fruits"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-7">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-7.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-7.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-7.jpg 1x, ./images/@2x-mob-7.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-7.jpg" alt="ice-cream-7" width="44" />
-        </picture>
-      </li>
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-7.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-7.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-7.png"
+              alt="ace cream in your hand"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-8">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-8.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-8.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-8.jpg 1x, ./images/@2x-mob-8.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/@1x-mob-8.jpg"
-            alt="ice-cream-8"
-            width="44"
-            class="top-image"
-          />
-        </picture>
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-8.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-8.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-8.png"
+              alt="a dog eating ice cream"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-9">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-9.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-9.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-9.jpg 1x, ./images/@2x-mob-9.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-9.jpg" alt="ice-cream-9" width="44" />
-        </picture>
-      </li>
-      <li class="masonry__item">
-        <picture>
-          <!-- <source
-            srcset="./img/img@1x-desctop.jpg 1x, ./img/img@2x-desctop.jpg 2x"
-            media="(min-width: 1200px)"
-          />
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-9.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-9.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src=" ./images/gallery/gallery-tab/@1x-gallery-tab-9.png"
+              alt="coffee with cream"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="grid-item grid__item-10">
+        <a href="" class="grid__link">
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/gallery-desktop/@1x-gallery-desktop-10.png 1x,
+                ./images/gallery/gallery-desktop/@2x-gallery-desktop-10.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
-          <source
-            srcset="./img/img@1x-tablet.jpg 1x, ./img/img@2x-tablet.jpg 2x"
-            media="(min-width: 768px)"
-          /> -->
-          <source
-            srcset="./images/@1x-mob-10.jpg 1x, ./images/@2x-mob-10.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/@1x-mob-10.jpg" alt="ice-cream-10" width="44" />
-        </picture>
-      </li>
-    </ul>
+            <source
+              srcset="
+                ./images/gallery/gallery-tab/@1x-gallery-tab-10.png 1x,
+                ./images/gallery/gallery-tab/@2x-gallery-tab-10.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/gallery/gallery-tab/@1x-gallery-tab-10.png"
+              alt="cookies with the ice cream"
+            />
+          </picture>
+        </a>
+      </div>
+    </div>
   </div>
 </section>

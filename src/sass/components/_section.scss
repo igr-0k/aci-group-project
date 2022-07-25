@@ -6,6 +6,7 @@
 
 .section__title {
   font-family: 'Titan One';
+  font-style: normal;
   @include font(400, 34px, 1.15, 0.04);
   text-transform: uppercase;
   color: $second-color;

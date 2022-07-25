@@ -1,8 +1,15 @@
 .menu-btn {
-  width: 20px;
-  height: 12px;
+  position: fixed;
+  top: 19px;
+  right: 20px;
+  padding: 0;
+  border: 0px;
   border-color: transparent;
   background-color: transparent;
+  z-index: 2;
+  @include tablet {
+    position: static;
+  }
   @include desktop {
     display: none;
   }
@@ -11,9 +18,10 @@
 .mob-menu-close-btn {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 // .menu-close-btn:hover .current {
@@ -23,23 +31,34 @@
 .mob-menu-wrap {
   position: fixed;
   top: 0;
+  right: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.2);
-  transition: opacity 500ms linear, visibility 500ms linear;
+  max-width: 480px;
+  // background-color: rgba($color: #000000, $alpha: 0.2);
+  transition: opacity 300ms linear, visibility 500ms linear;
+  @include tablet {
+    width: 254px;
+  }
 }
 
 .mob-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
   padding-top: 60px;
-  width: 250px;
+  width: 100vw;
   height: 100vh;
+  max-width: 480px;
   background-color: #e17992;
   z-index: 2;
   transform: translateX(0);
   transition: transform 300ms linear;
+  @include tablet {
+    padding-top: 60px;
+    width: 254px;
+    height: 1020px;
+    transform: translateX(0);
+    transition: transform 300ms linear;
+  }
 }
 
 .is-hidden {
@@ -48,9 +67,11 @@
   pointer-events: none;
 }
 
-.mob-menu-wrap.is-hidden .mob-menu {
-  transform: translateX(100%);
-  transition: transform 300ms linear;
+.mob-menu-wrap.is-hidden {
+  & .mob-menu {
+    transform: translateX(100%);
+    transition: transform 300ms linear;
+  }
 }
 
 .mob-menu-wrap .mob-menu__link {
