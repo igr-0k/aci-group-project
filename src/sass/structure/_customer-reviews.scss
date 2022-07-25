@@ -1,6 +1,3 @@
-.reviews__title {
-  display: none;
-}
 
 .section.reviews{
    background-image: none;
@@ -72,7 +69,7 @@
   background-color: #fafafa;
   position: relative;
   width: 100%;
-  padding: 42px 50px 19px 50px;
+  padding: 42px 50px 0px 50px;
   margin-bottom: 15px;
  
 }
@@ -95,14 +92,15 @@
     padding-left: 15px;
     padding-bottom: 17px;
     background: repeating-linear-gradient(
-#FAFAFA 0px, #FAFAFA 31px,
- #E1E1E1 0px, #E1E1E1 32px );
+#FAFAFA 0px, #FAFAFA 30px,
+ #E1E1E1 0px, #E1E1E1 31px );
    
 }
 .reviews__text {
       font-size: 12px;
     font-weight: 500;
     line-height: 2.59;
+    letter-spacing: 0.03em;
   }
 
 
