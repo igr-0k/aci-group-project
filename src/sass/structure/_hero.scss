@@ -3,6 +3,10 @@
   position: relative;
   height: 502px;
   overflow: hidden;
+
+  @include tablet {
+    height: 416px;
+  }
 }
 
 .hero__title {
@@ -11,17 +15,29 @@
   text-transform: uppercase;
   color: #fff;
 
-  margin-top: 194px;
+  @include tablet {
+    font-size: 22px;
+  }
 }
 
 .hero__text-btns {
   position: absolute;
   z-index: 1;
+
+  margin-top: 194px;
+
+  @include tablet {
+    margin-top: 102px;
+  }
 }
 
 .accent-logo {
   color: #d41443;
   @include font(null, 48px, 0.96, null);
+
+  @include tablet {
+    font-size: 34px;
+  }
 }
 
 .hero__btn {
@@ -36,12 +52,6 @@
   color: #d41443;
 }
 
-.hero-button__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-}
-
 .hero__btn--products {
   background-color: #d41443;
   color: #fff;
@@ -51,13 +61,23 @@
   position: absolute;
   display: flex;
   margin-top: 20px;
+  gap: 8px;
+
+  @include tablet {
+    gap: 9px;
+  }
 }
 
-.hero-circle {
+.hero-circle-first {
   content: '';
   position: absolute;
   top: 83px;
   left: 36px;
+
+  @include tablet {
+    top: 43px;
+    left: 248px;
+  }
 
   width: 345px;
   height: 345px;
@@ -70,8 +90,36 @@
   }
 }
 
-.hero-circle__ice-cream {
+.hero-circle-first__ice-cream {
   position: absolute;
   top: 9px;
   left: 81px;
+
+  @include tablet {
+    top: 37px;
+    left: 74px;
+  }
+}
+
+.hero-circle-second,
+.hero-circle-third {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.hero-circle-second__milk {
+  position: absolute;
+  @include tablet {
+    bottom: 16px;
+    left: 32px;
+  }
+}
+
+.hero-circle-third__tasty {
+  position: absolute;
+  @include tablet {
+    bottom: 0;
+    right: 32px;
+  }
 }
