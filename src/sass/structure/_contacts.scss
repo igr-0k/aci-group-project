@@ -4,11 +4,11 @@
 
   @include tablet {
     background-image: linear-gradient(to bottom, #ffffff 49%, #fff5f6 49%);
-    padding-bottom: 60px;
   }
 
   @include desktop {
     background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
+    padding-bottom: 60px;
   }
 }
 
