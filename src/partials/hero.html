@@ -1,5 +1,5 @@
 <section class="hero" id="hero">
-  <div class="container hero-container">
+  <div class="container">
     <div class="hero__text-btns">
       <h1 class="hero__title">
         ice cream <br />made with <br /><span class="accent-logo">passion</span>
@@ -20,84 +20,76 @@
       </ul>
     </div>
 
-    <div class="hero-circle-first">
-      <picture class="hero-circle-first__ice-cream">
+    <div class="hero-container">
+      <div class="hero-circle">
+        <picture class="hero-circle__ice-cream">
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_desktop.png    1x,
+              ./images/hero/ice-cream/ice-cream_desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_tablet.png    1x,
+              ./images/hero/ice-cream/ice-cream_tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_mobile.png    1x,
+              ./images/hero/ice-cream/ice-cream_mobile@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/hero/ice-cream/ice-cream_mobile.png"
+            alt="ice-cream"
+            width="171"
+          />
+        </picture>
+      </div>
+      <picture class="hero-circle__milk">
         <source
           srcset="
-            ./images/hero/ice-cream/ice-cream_desktop.png    1x,
-            ./images/hero/ice-cream/ice-cream_desktop@2x.png 2x
+            ./images/hero/milk/milk_desktop.png    1x,
+            ./images/hero/milk/milk_desktop@2x.png 2x
           "
           media="(min-width: 1200px)"
         />
         <source
           srcset="
-            ./images/hero/ice-cream/ice-cream_tablet.png    1x,
-            ./images/hero/ice-cream/ice-cream_tablet@2x.png 2x
+            ./images/hero/milk/milk_tablet.png    1x,
+            ./images/hero/milk/milk_tablet@2x.png 2x
           "
           media="(min-width: 768px)"
         />
+        <img src="./images/hero/milk/milk_tablet.png" alt="milk" width="152" />
+      </picture>
+
+      <picture class="hero-circle__tasty">
         <source
           srcset="
-            ./images/hero/ice-cream/ice-cream_mobile.png    1x,
-            ./images/hero/ice-cream/ice-cream_mobile@2x.png 2x
+            ./images/hero/tasty/tasty_desktop.png    1x,
+            ./images/hero/tasty/tasty_desktop@2x.png 2x
           "
-          media="(min-width: 320px)"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/tasty/tasty_tablet.png    1x,
+            ./images/hero/tasty/tasty_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
         />
         <img
-          src="./images/hero/ice-cream/ice-cream_mobile.png"
-          alt="ice-cream"
-          width="171"
+          src="./images/hero/tasty/tasty_tablet.png"
+          alt="tasty"
+          width="190"
         />
       </picture>
-    </div>
-    <div class="container-hero-png">
-      <div class="hero-circle-second">
-        <picture class="hero-circle-second__milk">
-          <source
-            srcset="
-              ./images/hero/milk/milk_desktop.png    1x,
-              ./images/hero/milk/milk_desktop@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/hero/milk/milk_tablet.png    1x,
-              ./images/hero/milk/milk_tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./images/hero/milk/milk_tablet.png"
-            alt="milk"
-            width="152"
-          />
-        </picture>
-      </div>
-
-      <div class="hero-circle-third">
-        <picture class="hero-circle-third__tasty">
-          <source
-            srcset="
-              ./images/hero/tasty/tasty_desktop.png    1x,
-              ./images/hero/tasty/tasty_desktop@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/hero/tasty/tasty_tablet.png    1x,
-              ./images/hero/tasty/tasty_tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./images/hero/tasty/tasty_tablet.png"
-            alt="tasty"
-            width="190"
-          />
-        </picture>
-      </div>
     </div>
   </div>
 </section>
