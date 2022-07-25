@@ -1203,16 +1203,15 @@ li {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 319px) {
+  .gallery__mob {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .gallery {
     padding-top: 20px;
     background-image: linear-gradient(to bottom, #fff5f6 60%, #ffffff 60%);
-  }
-  .wrapper {
-    background-image: none;
-  }
-  .gallery__mob {
-    display: none;
   }
   .grid {
     display: block;
