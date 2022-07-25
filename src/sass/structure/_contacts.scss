@@ -4,11 +4,11 @@
 
   @include tablet {
     background-image: linear-gradient(to bottom, #ffffff 49%, #fff5f6 49%);
-    padding-bottom: 60px;
   }
 
   @include desktop {
     background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
+    padding-bottom: 60px;
   }
 }
 
@@ -225,5 +225,56 @@
 
   @include desktop {
     font-size: 16px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &:hover .dropdown__content {
+    display: block;
+  }
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #d41342;
+  color: #ffffff;
+
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+
+  @include tablet {
+    width: 94%;
+  }
+}
+
+.dropdown__link {
+  font-family: 'DM Sans';
+  @include font(700, 16px, 1.31, null);
+  border: none;
+  border-radius: 20px;
+  padding: 9px 18px;
+  background-color: $second-color;
+  color: $first-color;
+
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  display: block;
+  width: 100%;
+
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $fourth-color;
   }
 }
