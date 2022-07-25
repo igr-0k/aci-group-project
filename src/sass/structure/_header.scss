@@ -1,28 +1,54 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  background-color: #ffb8ca;
+  @include mobile {
+    padding-top: 8px;
+    background-color: #ffb8ca;
+    z-index: 2;
+  }
   @include tablet {
-    padding-top: 52px;
+    padding-top: 32px;
+    display: flex;
   }
   @include desktop {
-    padding-top: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding-top: 37px;
+    display: flex;
+    background-color: rgba(255, 184, 202, 0.5);
   }
 }
 
+.wrap-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.nav {
+  margin-left: 128px;
+  transform: unset;
+}
+
 .logo {
-  display: block;
+  display: inline-block;
   width: 199px;
   height: 50px;
 }
 
 .site-nav {
   display: none;
-  @include tablet {
+  @include desktop {
     display: flex;
-    margin-left: 128px;
+
     .site-nav__link.current {
       color: $second-color;
     }
@@ -30,20 +56,43 @@
 }
 
 .site-nav__item {
-  position: relative;
+  height: 50px;
   &:not(:last-child) {
     margin-right: 35px;
   }
 }
 
-.order {
-  display: none;
+.order-link-wrap {
   @include desktop {
     margin-left: auto;
   }
 }
 
+.order-link {
+  display: none;
+  @include tablet {
+    display: inline-block;
+    margin-left: 32px;
+    text-align: center;
+    padding: 12px 0;
+    width: 160px;
+    min-height: 44px;
+    border-radius: 22px;
+    background-color: $first-color;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    justify-content: center;
+    color: $second-color;
+  }
+}
+
 .site-nav__link {
+  display: block;
+  min-height: 50px;
+  padding: 15px 0;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
