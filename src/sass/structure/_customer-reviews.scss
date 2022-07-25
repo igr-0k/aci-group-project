@@ -13,6 +13,17 @@
      padding-bottom: 60px;
   }
 }
+
+.reviews__slider{
+  @include tablet{
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  @include desktop{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 .slick-list {
   overflow: hidden;
 }
