@@ -4,19 +4,16 @@
   padding-bottom: 20px;
   align-items: center;
   justify-content: center;
+  background-image: url(/src/images/about-mobile/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 80%;
+  @include tablet {
+    background-image: none;
+  }
 
-  .container {
-    background-image: url(/src/images/about-mobile/about-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 80%;
-    @include tablet {
-      background-image: none;
-    }
-
-    @include desktop {
-      background-image: url(/src/images/about-desk/about-bg-desk.png);
-    }
+  @include desktop {
+    background-image: url(/src/images/about-desk/about-bg-desk.png);
   }
 }
 
@@ -101,6 +98,11 @@
   color: #d41443;
   padding: 9px 37px;
   margin-top: 20px;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 
   @include tablet {
     margin-top: 40px;
