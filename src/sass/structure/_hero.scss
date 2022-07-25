@@ -8,6 +8,10 @@
   @include tablet {
     height: 416px;
   }
+
+  @include desktop {
+    height: 664px;
+  }
 }
 
 .hero-container {
@@ -16,15 +20,25 @@
     width: 100%;
     height: 416px;
   }
+
+  @include desktop {
+    height: 664px;
+  }
 }
+
 .hero__title {
   font-family: 'Titan One', sans-serif;
   @include font(400, 26px, 1.15, 0.04em);
   text-transform: uppercase;
-  color: #fff;
+  color: $first-color;
 
   @include tablet {
     font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 38px;
+    line-height: 1.14;
   }
 }
 
@@ -37,14 +51,23 @@
   @include tablet {
     margin-top: 102px;
   }
+
+  @include desktop {
+    margin-top: 147px;
+  }
 }
 
 .accent-logo {
-  color: #d41443;
+  color: $second-color;
   @include font(null, 48px, 0.96, null);
 
   @include tablet {
     font-size: 34px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: 0.9;
   }
 }
 
@@ -56,13 +79,21 @@
   border-radius: 20px;
   padding: 9px 14px;
 
-  background-color: #fff;
-  color: #d41443;
+  background-color: $first-color;
+  color: $second-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.3;
+
+    padding: 15px 21px;
+    border-radius: 25px;
+  }
 }
 
 .hero__btn--products {
-  background-color: #d41443;
-  color: #fff;
+  background-color: $second-color;
+  color: $first-color;
 }
 
 .hero-button {
@@ -74,6 +105,11 @@
   @include tablet {
     gap: 9px;
   }
+
+  @include desktop {
+    margin-top: 24px;
+    gap: 12px;
+  }
 }
 
 .hero-circle {
@@ -84,7 +120,7 @@
   width: 345px;
   height: 345px;
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: $fourth-color;
 
   @media screen and(min-width: 426px) and (max-width: 767.98px) {
     left: 50%;
@@ -97,6 +133,14 @@
 
     width: 335px;
     height: 335px;
+  }
+
+  @include desktop {
+    top: 54px;
+    left: 501px;
+
+    width: 534px;
+    height: 534px;
   }
 }
 
@@ -112,6 +156,14 @@
     width: 143px;
     height: 336px;
   }
+
+  @include desktop {
+    top: 54px;
+    left: 119px;
+
+    width: 236px;
+    height: 557px;
+  }
 }
 
 .hero-circle__milk {
@@ -124,16 +176,28 @@
     bottom: 16px;
     left: 0;
   }
+
+  @include desktop {
+    left: 0;
+    bottom: 60px;
+
+    width: 213px;
+  }
 }
 
 .hero-circle__tasty {
   @include mobile-only {
     display: none;
   }
+
   @include tablet {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  @include tablet {
+    width: 304px;
   }
 }
 
@@ -144,8 +208,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 16px;
   padding-top: 92px;
+  gap: 16px;
+
+  @include desktop {
+    padding-top: 152px;
+    gap: 15px;
+  }
 }
 
 .hero-counter__item {
@@ -161,18 +230,36 @@
   &:last-child {
     width: 51px;
   }
+
+  @include desktop {
+    width: 72px;
+    height: 76px;
+
+    &:last-child {
+      width: 92px;
+    }
+  }
 }
 
 .hero-counter__meta {
   font-family: 'Titan One', sans-serif;
   @include font(400, 28px, 1.14, 0.04em);
   color: $second-color;
+
+  @include desktop {
+    font-size: 46px;
+  }
 }
 
 .hero-counter__text {
   font-family: 'DM Sans', sans-serif;
   @include font(400, 8px, 1.25, null);
   color: $first-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.3;
+  }
 }
 
 .hero-counter__circle {
@@ -183,7 +270,12 @@
   height: 16px;
 
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $first-color;
+
+  @include desktop {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .meta-text {
@@ -207,6 +299,12 @@
   max-width: 114px;
   margin-top: 92px;
   margin-left: 152px;
+
+  @include desktop {
+    max-width: 200px;
+    margin-top: 136px;
+    margin-left: 213px;
+  }
 }
 
 .hero-description__text,
@@ -216,6 +314,13 @@
   @include font(400, 8px, 1.5, null);
 
   margin-bottom: 7px;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+  }
 }
 
 .hero-description__btn {
@@ -232,7 +337,7 @@
   height: 18px;
   border: 0px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $first-color;
 
   @include transitions(background-color);
 
@@ -250,6 +355,13 @@
   }
   &.is-open .icon-arrow-open {
     display: none;
+  }
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+
+    margin-bottom: 20px;
   }
 }
 
