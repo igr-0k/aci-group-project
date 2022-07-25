@@ -197,12 +197,16 @@
   display: flex;
   flex-direction: column;
 
+  position: absolute;
+  z-index: 1;
+
   max-width: 114px;
   margin-top: 92px;
-  margin-left: 184px;
+  margin-left: 152px;
 }
 
-.hero-description__text {
+.hero-description__text,
+.hero-description__text-hidden {
   color: $first-color;
   font-family: 'DM Sans', sans-serif;
   @include font(400, 8px, 1.5, null);
@@ -245,8 +249,6 @@
   }
 }
 
-.hero-description__text-hidden {
-  color: $first-color;
-  font-family: 'DM Sans', sans-serif;
-  @include font(400, 8px, 1.5, null);
+.hero__article {
+  display: none;
 }
