@@ -4,6 +4,25 @@
     padding-bottom: 0;
     padding-top: 30px;
   padding-bottom: 30px;
+
+  @include tablet{
+    padding-bottom: 40px;
+  }
+  @include desktop{
+     padding-top: 60px;
+     padding-bottom: 60px;
+  }
+}
+
+.reviews__slider{
+  @include tablet{
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  @include desktop{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 .slick-list {
   overflow: hidden;
@@ -61,7 +80,12 @@
   margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
- 
+ @include tablet{
+  margin-bottom: 20px;
+ }
+ @include desktop{
+  margin-bottom: 16px;
+ }
 }
 
 .reviews__wrap {
@@ -69,8 +93,13 @@
   background-color: #fafafa;
   position: relative;
   width: 100%;
-  padding: 42px 50px 0px 50px;
-  margin-bottom: 15px;
+  padding: 43px 50px 0px 50px;
+   @include tablet{
+   padding: 36px 6px 0px 6px; 
+  }
+  @include desktop{
+   padding: 43px 72px 0 72px
+  }
  
 }
 
@@ -80,11 +109,21 @@
   width: 54px;
   height: 40px;
   background-image: url(../images/reviews/quote.svg);
+  background-repeat: no-repeat;
   fill: #e1e1e1;
   position: absolute;
-  top: 28px;
-  left: 55px;
-  
+  top: 30px;
+  left: 53px;
+  @include tablet{
+    width: 60px;
+    top: 20px;
+    left: 8px;
+  }
+  @include desktop{
+    width: 54px;
+    top: 32px;
+    left: 72px;
+  }
 
 }
 
@@ -95,15 +134,32 @@
     background: repeating-linear-gradient(
 #FAFAFA 0px, #FAFAFA 30px,
  #E1E1E1 0px, #E1E1E1 31px );
-   
+     @include tablet{
+    padding-left: 51px;
+    padding-right: 44px;
+    padding-bottom: 32px;
+  }
+  @include desktop{
+    padding-left: 36px;
+    padding-right: 35px;
+  }
 }
 .reviews__text {
+  font-family: 'DM Sans';
   position: relative;
       font-size: 12px;
     font-weight: 500;
-    line-height: 2.59;
-    letter-spacing: 0.03em;
+    line-height: 2.55;
+    letter-spacing: 0.04em;
     z-index: 1;
+    @include tablet{
+       font-size: 14px;
+      line-height: 2.16;
+    }
+    @include desktop{
+       font-size: 16px;
+      line-height: 1.86;
+    }
   }
 
 
@@ -113,12 +169,19 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+   margin-top: 16px;
   position: relative;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: #c7133e;
   margin-bottom: 16px;
+    @include tablet{
+   margin-top: 4px;
+  }
+  @include desktop{
+     margin-top: 16px;
+  }
 }
 .reviews__dot::after {
   content: '';
@@ -142,8 +205,12 @@
   margin-right: 10px;
 }
 .reviews__name {
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   margin-bottom: 16px;
+  @include tablet{
+    margin-bottom: 32px;
+  }
 }
