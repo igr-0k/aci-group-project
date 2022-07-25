@@ -173,9 +173,23 @@
 
 .footer__contact-main {
     font-family: 'DM Sans';
-    @include font(700, 12px, 1.86, null);
+    @include font(700, 12px, 1.86, 0.02em);
     color: $third-color;
+    @media screen and (min-width: 768px) {
+      @include font(700, 14px, 1.86, 0.02);
+  }
+  @media screen and (min-width: 1200px) {
+      @include font(700, 16px, 1.86, 0.02em);
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.86; 
+      letter-spacing: 0.02em;
+      color: #000000;
+
+  }
     }
+    
 
 .footer__contact-tel {
     color: $second-color;
@@ -191,6 +205,15 @@
     background-color: #FFF5F6;
     padding-top: 16px;
     padding-bottom: 3px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 4px;
+      padding-top: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 4px;
+      padding-top: 7px;
+        
+    }
 }
 
 .footer__copy-main {
@@ -198,6 +221,16 @@
     @include font(700, 14px, 1.52, null);
     text-align: center;
     color: $fifth-color;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+        
+    }
     }
 
 .footer__copy-add {
