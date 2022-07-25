@@ -16,8 +16,8 @@
 
 .reviews__slider{
   @include tablet{
-    padding-left: 74px;
-    padding-right: 74px;
+    padding-left: 42px;
+    padding-right: 42px;
   }
   @include desktop{
     padding-left: 100px;
@@ -142,7 +142,7 @@
   }
 }
 .reviews__text {
-  font-family: sans-serif;
+  font-family: DM Sans;
   position: relative;
       font-size: 12px;
     font-weight: 500;
@@ -151,7 +151,7 @@
     z-index: 1;
     @include tablet{
        font-size: 14px;
-      line-height: 2.14;
+      line-height: 2.16;
     }
     @include desktop{
        font-size: 16px;
