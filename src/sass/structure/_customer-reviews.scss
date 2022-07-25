@@ -132,7 +132,14 @@
     background: repeating-linear-gradient(
 #FAFAFA 0px, #FAFAFA 30px,
  #E1E1E1 0px, #E1E1E1 31px );
-   
+     @include tablet{
+    padding-left: 51px;
+    padding-right: 55px;
+  }
+  @include desktop{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 .reviews__text {
   position: relative;
@@ -164,6 +171,12 @@
   border-radius: 50%;
   background-color: #c7133e;
   margin-bottom: 16px;
+    @include tablet{
+   margin-top: 6px;
+  }
+  @include desktop{
+     margin-top: 16px;
+  }
 }
 .reviews__dot::after {
   content: '';
@@ -191,4 +204,7 @@
   font-size: 14px;
   line-height: 1.86;
   margin-bottom: 16px;
+  @include tablet{
+    padding-bottom: 32px;
+  }
 }
