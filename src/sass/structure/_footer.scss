@@ -173,8 +173,19 @@
 
 .footer__contact-main {
     font-family: 'DM Sans';
-    @include font(700, 12px, 1.86, null);
+    @include font(700, 12px, 1.86, 0.02em);
     color: $third-color;
+    @media screen and (min-width: 768px) {
+      @include font(700, 14px, 1.86, 0.02);
+  }
+  @media screen and (min-width: 1200px) {
+      @include font(700, 16px, 1.86, 0.02em);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.86; 
+      letter-spacing: 0.02em;
+      color: #000000;
+  }
     }
 
 .footer__contact-tel {
