@@ -15,7 +15,6 @@
     position: relative;
     width: 100%;
     height: 416px;
-    background-color: rgba(0, 255, 255, 0.147);
   }
 }
 .hero__title {
@@ -137,4 +136,43 @@
     bottom: 0;
     right: 0;
   }
+}
+
+.hero-counter {
+  @include mobile-only {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding-top: 92px;
+  padding-right: 10px;
+}
+
+.hero-counter__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.hero-counter__meta {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 28px, 1.14, 0.04em);
+  color: $second-color;
+}
+
+.hero-counter__text {
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.25, null);
+  color: $first-color;
 }
