@@ -15,6 +15,8 @@
 }
 
 .hero-container {
+  margin: 0 auto;
+
   @include tablet {
     position: relative;
     width: 100%;
@@ -129,7 +131,8 @@
 }
 
 .hero-circle {
-  position: absolute;
+  margin-top: 23px;
+  margin-left: 36px;
   top: 23px;
   left: 36px;
 
@@ -138,28 +141,35 @@
   border-radius: 50%;
   background-color: $fourth-color;
 
-  @media screen and(min-width: 426px) and (max-width: 767.98px) {
-    left: 50%;
-    transform: translateX(-50%);
+  @media screen and (min-width: 426px) and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  // @include transitions(opacity, visibility);
-
   @include tablet {
+    position: absolute;
     top: 43px;
     left: 216px;
 
     width: 335px;
     height: 335px;
+
+    margin: 0;
   }
 
   @include desktop {
+    position: absolute;
+
     top: 54px;
     left: 501px;
 
     width: 534px;
     height: 534px;
+
+    margin: 0;
   }
+
+  animation-duration: 1500ms;
 }
 
 .hero-circle__ice-cream {
@@ -176,8 +186,6 @@
   }
 
   @include desktop {
-    // opacity: 0;
-    // visibility: hidden;
     display: none;
 
     top: 54px;
@@ -266,7 +274,7 @@
     right: 0;
   }
 
-  @include tablet {
+  @include desktop {
     width: 304px;
   }
 }
@@ -445,11 +453,6 @@
 
 // ---------- ANIMATIONS ----------
 
-// .hero-circle__ice-cream {
-//   animation-duration: 2000ms;
-//   animation-delay: 1000ms;
-// }
-
 .ice-cream-animation__item {
   animation-duration: 1000ms;
   animation-delay: 2250ms;
@@ -478,8 +481,4 @@
     animation-duration: 1000ms;
     animation-delay: 1100ms;
   }
-}
-
-.animate__backInLeft {
-  animation-duration: 1500ms;
 }
