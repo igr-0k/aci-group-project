@@ -235,6 +235,7 @@
 
   &:hover .dropdown__content {
     opacity: 1;
+    pointer-events: visible;
   }
 }
 
@@ -242,6 +243,7 @@
   opacity: 0;
   position: absolute;
   top: 38.95px;
+  pointer-events: none;
 
   background-color: #d41342;
   color: #ffffff;
