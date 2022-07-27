@@ -1,6 +1,4 @@
 .advantages {
-  // паддінг-топ з розрахунком, що в "About" паддінг-боттом 20px
-  // паддінг-боттом з розрахунком, що в "Gallery" паддінг-топ 20px
   padding: 20px 0 40px;
   background-color: #fff5f6;
 
@@ -10,10 +8,6 @@
 
   @include desktop {
     padding: 40px 0 100px;
-  }
-
-  .container {
-    padding-right: 70px;
   }
 }
 
@@ -41,8 +35,12 @@
     flex-basis: calc((100% - 44px) /3);
   }
 
+  @media screen and (min-width: 864px) {
+    width: 215px;
+  }
+
   @include desktop {
-    width: 288px;
+    width: 290px;
     flex-basis: calc((100% - 230px) /3);
   }
 
@@ -193,7 +191,6 @@
   text-transform: uppercase;
   text-align: left;
   color: $second-color;
-  transition: color 250ms linear;
 
   @include tablet {
     margin-bottom: 13px;
@@ -205,10 +202,6 @@
     height: 65px;
     margin-bottom: 16px;
     @include font(null, 58px, null, null);
-  }
-
-  .advantages__item:hover & {
-    color: $fourth-color;
   }
 }
 

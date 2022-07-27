@@ -123,7 +123,7 @@
     background-image: url('../images/products-280/product1-280@2x.png');
   }
 
-  @media screen and (min-width: 321px) {
+  @include tablet {
     background-image: url('../images/products-tablet/product1-224.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -133,7 +133,7 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @include desktop {
     background-image: url('../images/products-desktop/product1-368.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -152,7 +152,7 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/products-280/product2-280@2x.png');
   }
-  @media screen and (min-width: 321px) {
+  @include tablet {
     background-image: url('../images/products-tablet/product2-224.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -162,7 +162,7 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @include desktop {
     background-image: url('../images/products-desktop/product2-368.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -182,7 +182,7 @@
     background-image: url('../images/products-280/product3-280@2x.png');
   }
 
-  @media screen and (min-width: 321px) {
+  @include tablet {
     background-image: url('../images/products-tablet/product3-224.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -192,7 +192,7 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @include desktop {
     background-image: url('../images/products-desktop/product3-368.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -271,22 +271,25 @@
   border-radius: 50%;
   background-color: #ffffff;
 
-  transition: background-color 300ms linear;
+  @include transitions(background-color);
 
   &:hover,
   &:focus {
     background-color: #aaaaaa;
   }
 
-  & .icon-arrow-close {
-    display: none;
+  & .icon-arrow-close,
+  &.is-open .icon-arrow-open {
+    opacity: 0;
+    visibility: hidden;
   }
 
+  & .icon-arrow-open,
   &.is-open .icon-arrow-close {
     display: block;
-  }
-  &.is-open .icon-arrow-open {
-    display: none;
+    opacity: 1;
+    visibility: visible;
+    @include transitions(opacity, visibility);
   }
 }
 
@@ -312,7 +315,7 @@
   visibility: visible;
   margin-top: 25px;
 
-  transition: visibility 300ms linear;
+  @include transitions(visibility);
 }
 
 .products__consist-list,

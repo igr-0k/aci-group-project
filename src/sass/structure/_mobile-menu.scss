@@ -1,15 +1,41 @@
-.menu-btn {
+.menu-btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: fixed;
-  top: 19px;
+  top: 15px;
   right: 20px;
-  padding: 0;
-  border: 0px;
-  border-color: transparent;
-  background-color: transparent;
   z-index: 2;
+
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 184, 202, 0.5);
+  border-radius: 50%;
+
   @include tablet {
     position: static;
   }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-btn {
+  // position: fixed;
+  // top: 19px;
+  // right: 20px;
+  // z-index: 2;
+  padding: 0;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+
+  @include tablet {
+    position: static;
+  }
+
   @include desktop {
     display: none;
   }
@@ -33,13 +59,14 @@
   top: 0;
   right: 0;
   z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  max-width: 480px;
+  // width: 100vw;
+  // height: 100vh;
   // background-color: rgba($color: #000000, $alpha: 0.2);
-  transition: opacity 300ms linear, visibility 500ms linear;
+  transition: opacity 300ms linear, visibility 300ms linear;
+
   @include tablet {
-    width: 254px;
+    width: 40%;
+    height: 100vh;
   }
 }
 
@@ -47,17 +74,17 @@
   padding-top: 60px;
   width: 100vw;
   height: 100vh;
-  max-width: 480px;
   background-color: #e17992;
   z-index: 2;
   transform: translateX(0);
   transition: transform 300ms linear;
+  overflow: auto;
+
   @include tablet {
     padding-top: 60px;
-    width: 254px;
-    height: 1020px;
-    transform: translateX(0);
-    transition: transform 300ms linear;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
   }
 }
 
@@ -87,6 +114,7 @@
   align-items: center;
   justify-content: center;
   color: $second-color;
+
   &::after {
     content: '';
     width: 10px;
@@ -102,11 +130,16 @@
 }
 
 .mob-menu__list-item {
-  padding: 12px 0;
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
 }
 
 .current {
   color: $second-color;
+}
+
+.active {
+  @media screen and (max-width: 1199.98px) {
+    color: $second-color;
+  }
 }

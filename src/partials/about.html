@@ -3,11 +3,35 @@
     <p class="about__pre-title">tradition and love</p>
     <h2 class="section__title">how it’s made?</h2>
     <div class="about-content__wrap">
-      <img
-        class="about__img"
-        src="/src/images/about-desk/about-img-desk.png"
-        alt="Cow with milk"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /src/images/about-desk/cow-desk-1x.png 1x,
+            /src/images/about-desk/cow-desk-2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /src/images/about-desk/cow-tab-1x.png 1x,
+            /src/images/about-desk/cow-tab-2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /src/images/about-mobile/cow-mob-1x.png 1x,
+            /src/images/about-mobile/cow-mob-2x.png 2x
+          "
+        />
+
+        <img
+          class="about__img"
+          src="/src/images/about-desk/cow-tab-2x.png"
+          alt="Cow with milk"
+        />
+      </picture>
 
       <div class="about-description__wrap">
         <p class="about__description">
@@ -22,13 +46,47 @@
           tincidunt.
         </p>
         <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button" class="about__btn">
+        <button type="button" class="about__btn" about-modal-open>
           Read more
           <svg class="about__icon" width="8" height="10">
             <use href="/src/images/icon.svg#icon-Vector-1"></use>
           </svg>
         </button>
       </div>
+    </div>
+  </div>
+  <div class="bacdrop is-hidden" about-modal>
+    <div class="about__modal">
+      <button type="button" class="about__close-btn">
+        <svg class="about-close-svg" width="18" height="18" about-modal-close>
+          <use href="/src/images/icon.svg#icon-close-modal-btn"></use>
+        </svg>
+      </button>
+      <svg class="modal__logo-svg" width="132" height="33">
+        <use href="/src/images/icon.svg#icon-logo"></use>
+      </svg>
+
+      <img
+        class="about-modal__img"
+        src="/src/images/about-desk/about-modal-desk.png"
+        alt="ice-cream"
+        width="350"
+        height="350"
+      />
+      <div class="about-title__wrap">
+        <h2 class="about-modal__title">how it's made?</h2>
+        <p class="modal__pre-title">
+          We use special technology to make our unbeliaveble icecream
+        </p>
+      </div>
+
+      <p class="about-modal__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu
+      </p>
     </div>
   </div>
 </section>
