@@ -7,12 +7,45 @@
     </button>
     <svg class="modal-order__logo-svg" width="132" height="33">
       <use href="/src/images/icon.svg#icon-logo"></use>
-      <h2 class="modal-order__title">buy now!</h2>
-      <p class="modal-text">
-        Dear friend if you are in Chicago, Los-Angeles or New York you can buy
-        our delicious ice cream right now. Fill out the form below and our ice
-        cream man will bring some balls of happiness directly to your home
-      </p>
     </svg>
+    <h2 class="modal-order__title">buy now!</h2>
+    <div class="modal-text-wrap">
+      <p class="modal-text">Dear friend!</p>
+      <p class="modal-text">
+        If you are in Chicago, Los-Angeles or New York, you can buy our
+        delicious ice cream right now. Fill out the form below and our ice cream
+        man will contact with you and bring some balls of happiness directly to
+        your home.
+      </p>
+    </div>
+    <form class="modal-order__form">
+      <label class="modal-order__label">
+        Your name
+        <input
+          type="text"
+          name="name"
+          class="modal-order__input"
+          placeholder="Michaela Gelato"
+          required
+        />
+      </label>
+      <label class="modal-order__label">
+        Phone number
+        <input
+          type="tel"
+          name="user-tel"
+          class="modal-order__input"
+          placeholder="+61(0) 383 766 284"
+          required
+        />
+      </label>
+
+      <button type="submit" class="order-butn modal-butn">
+        Submit
+        <svg class="btn-svg" Width="5" height="8">
+          <use href="/src/images/icon.svg#icon-more"></use>
+        </svg>
+      </button>
+    </form>
   </div>
 </div>

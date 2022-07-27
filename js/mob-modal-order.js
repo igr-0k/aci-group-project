@@ -10,7 +10,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('no-shown');
     refs.body.classList.toggle('no-scroll');
+    refs.modal.classList.toggle('no-shown');
   }
 })();
