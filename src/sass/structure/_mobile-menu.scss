@@ -101,7 +101,7 @@
   }
 }
 
-.mob-menu-wrap .mob-menu__link {
+.mob-menu-wrap .order-btn {
   display: flex;
   width: 100%;
   min-height: 44px;
@@ -113,7 +113,7 @@
   line-height: 1.31;
   align-items: center;
   justify-content: center;
-  color: $second-color;
+  border-color: transparent;
 
   &::after {
     content: '';
@@ -123,6 +123,18 @@
     background-image: url(../images/arrow.svg);
     background-repeat: no-repeat;
   }
+}
+
+.order-butn:hover,
+.order-butn:focus,
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #ecebeb;
+  transition: background-color 300ms linear;
+}
+
+.mob-menu__link {
+  color: $second-color;
 }
 
 .mob-menu__list {
