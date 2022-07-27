@@ -10,10 +10,12 @@
     top: 0;
     left: 0;
     padding-top: 24px;
-    background: linear-gradient(90deg,
-        rgba(255, 184, 202, 1) 0%,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 184, 202, 0.5) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 184, 202, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 184, 202, 0.5) 100%
+    );
   }
 
   @include desktop {
@@ -113,6 +115,11 @@
   font-size: 16px;
   line-height: 1.31;
   color: $first-color;
+
+  // &:focus,
+  &:hover {
+    color: $second-color;
+  }
 }
 
 .to-top__link {
