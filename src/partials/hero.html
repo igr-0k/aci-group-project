@@ -1,22 +1,20 @@
-<section class="hero" id="hero">
+<section class="hero">
   <div class="container">
     <div class="hero__text-btns">
       <h1 class="hero__title">
-        ice cream <br />made with <br /><span class="accent-logo">passion</span>
+        ice cream <br />made with <br /><span class="accent-title"
+          >passion</span
+        >
       </h1>
       <ul class="hero-button">
         <li class="hero-button__item">
-          <a href="#products_section" class="hero-button__link"
-            ><button type="button" class="hero__btn hero__btn--products">
-              Products
-            </button></a
+          <a href="#products_section" class="hero__btn hero__btn--products link"
+            >Products</a
           >
         </li>
         <li class="hero-button__item">
-          <a href="#about" class="hero-button__link"
-            ><button type="button" class="hero__btn hero__btn--about">
-              How it’s made?
-            </button></a
+          <a href="#about" class="hero__btn hero__btn--about link"
+            >How it’s made?</a
           >
         </li>
       </ul>
@@ -64,15 +62,17 @@
             ></use>
           </svg>
         </button>
-        <div class="hero__article">
+        <div class="hero__article" id="hero__article">
           <p class="hero-description__text-hidden">
             Come to our store and taste the best ice cream in the world.
           </p>
         </div>
       </div>
 
-      <div class="hero-circle">
-        <picture class="hero-circle__ice-cream">
+      <div class="hero-circle animate__animated animate__backInLeft">
+        <picture
+          class="hero-circle__ice-cream animate__animated animate__bounceInDown"
+        >
           <source
             srcset="
               ./images/hero/ice-cream/ice-cream_desktop.png    1x,
@@ -99,6 +99,57 @@
             alt="ice-cream"
           />
         </picture>
+
+        <ul class="ice-cream-animation">
+          <li
+            class="ice-cream-animation__item ice-cream-5 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream6-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-5 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream5-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-4 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream4-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-3 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream3-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-2 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream2-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-1 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream1-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+        </ul>
       </div>
       <picture class="hero-circle__milk">
         <source

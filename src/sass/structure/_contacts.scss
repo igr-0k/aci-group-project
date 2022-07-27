@@ -232,17 +232,14 @@
 .dropdown {
   position: relative;
   display: inline-block;
-
-  &:hover .dropdown__content {
-    opacity: 1;
-  }
 }
 
 .dropdown__content {
-  opacity: 0;
   position: absolute;
   top: 38.95px;
-
+  display: none;
+  // pointer-events: none;
+  // opacity: 0;
   background-color: #d41342;
   color: #ffffff;
 
@@ -251,7 +248,7 @@
   border-radius: 20px;
   z-index: 1;
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
 
   @include tablet {
@@ -280,4 +277,10 @@
   &:hover {
     background-color: $fourth-color;
   }
+}
+
+.dropbtn:hover .dropdown__content {
+  display: block;
+  // pointer-events: visible;
+  // opacity: 1;
 }
