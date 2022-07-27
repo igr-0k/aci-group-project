@@ -1,0 +1,2 @@
+!function(){var o={openModalBtn:document.querySelector(".order-btn"),closeModalBtn:document.querySelector(".modal-order__close-btn"),modal:document.querySelector(".backdrop"),body:document.querySelector("body")};function e(){o.body.classList.toggle("no-scroll"),o.modal.classList.toggle("no-shown")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.57f39820.js.map
