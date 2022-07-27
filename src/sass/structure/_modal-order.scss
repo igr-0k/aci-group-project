@@ -1,0 +1,101 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 60px 15px;
+  background-color: hsla(346, 63%, 68%, 0.5);
+  transition: opacity 300ms linear, visibility 300ms linear;
+
+  overflow-y: auto;
+}
+
+.modal-order {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  background-color: $fourth-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 500ms var(--primary-transition-timing-function);
+  .backdrop.no-shown & {
+    transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+  }
+  @include tablet {
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.no-shown {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-order__close-btn {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-icon-close {
+  fill: rgb(212, 19, 66);
+
+  &:hover,
+  &:focus {
+    fill: $fourth-color;
+  }
+}
+.modal-order__logo-svg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.modal-order__title,
+.modal-text {
+  font-family: 'Titan One';
+  font-style: normal;
+  @include font(400, 34px, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $second-color;
+
+  text-align: center;
+
+  @include tablet {
+    @include font(null, 48px, null, null);
+  }
+
+  @include desktop {
+    @include font(null, 58px, 1.14, 0.06);
+  }
+}
+
+.modal-text {
+  font-family: 'Titan One';
+  font-style: normal;
+  @include font(400, 16px, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $second-color;
+}
