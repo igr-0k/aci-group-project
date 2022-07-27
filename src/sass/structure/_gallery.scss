@@ -1,5 +1,6 @@
 .gallery {
   padding-top: 20px;
+  padding-bottom: 30px;
   background-image: linear-gradient(to bottom, #fff5f6 30%, $first-color 30%);
 }
 
@@ -13,6 +14,11 @@
 
 .gallery__mob {
   margin: 0 auto;
+}
+
+.disabled {
+  pointer-events: none; /* делаем ссылку некликабельной */
+  cursor: pointer;
 }
 @media screen and (min-width: 319px) {
   .gallery__mob {
@@ -91,6 +97,7 @@
 @media screen and (min-width: 768px) {
   .gallery {
     padding-top: 20px;
+    padding-bottom: 30px;
     background-image: linear-gradient(to bottom, #fff5f6 60%, $first-color 60%);
   }
 
@@ -129,64 +136,4 @@
     margin: 0 auto;
     // outline: 1px solid tomato;
   }
-
-  // .grid__item-1 {
-  //   position: absolute;
-  //   top: 33%;
-  //   left: 0;
-  // }
-
-  // .grid__item-2 {
-  //   position: absolute;
-  //   top: 20.7%;
-  //   left: 14.4%;
-  // }
-
-  // .grid__item-3 {
-  //   position: absolute;
-  //   bottom: 13.5%;
-  //   left: 14.4%;
-  // }
-
-  // .grid__item-4 {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 28.8%;
-  // }
-
-  // .grid__item-5 {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 28.8%;
-  // }
-
-  // .grid__item-6 {
-  //   position: absolute;
-  //   top: 23%;
-  //   left: 57.5%;
-  // }
-
-  // .grid__item-7 {
-  //   position: absolute;
-  //   bottom: 10.7%;
-  //   left: 57.5%;
-  // }
-
-  // .grid__item-8 {
-  //   position: absolute;
-  //   top: 15.3%;
-  //   left: 72%;
-  // }
-
-  // .grid__item-9 {
-  //   position: absolute;
-  //   bottom: 18.4%;
-  //   left: 72%;
-  // }
-
-  // .grid__item-10 {
-  //   position: absolute;
-  //   top: 36%;
-  //   left: 86.4%;
-  // }
 }
