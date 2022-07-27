@@ -10,12 +10,10 @@
     top: 0;
     left: 0;
     padding-top: 24px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 184, 202, 1) 0%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 184, 202, 0.5) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(255, 184, 202, 1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 184, 202, 0.5) 100%);
   }
 
   @include desktop {
@@ -116,7 +114,6 @@
   line-height: 1.31;
   color: $first-color;
 
-  // &:focus,
   &:hover {
     color: $second-color;
   }
@@ -126,6 +123,7 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 2;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -139,26 +137,8 @@
   cursor: pointer;
   transition: box-shadow 150ms linear;
   animation: top 300ms normal ease-in;
-  // transform-origin: 100% 60%;
 
   .to-top__link:hover {
     box-shadow: 0px 2px 6px 2px rgba(212, 20, 67, 0.1);
   }
-
-  // @keyframes top {
-  //   0% {
-  //     transform: scale(0);
-  //     opacity: 0;
-  //   }
-
-  //   70% {
-  //     transform: scale(0.7);
-  //     opacity: 0.5;
-  //   }
-
-  //   100% {
-  //     transform: scale(1);
-  //     opacity: 1;
-  //   }
-  // }
 }
