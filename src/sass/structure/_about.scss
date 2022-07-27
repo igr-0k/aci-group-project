@@ -147,7 +147,7 @@
   max-width: 450px;
   width: calc(100% - 30px);
   min-height: 600px;
-
+  overflow: auto;
   padding: 40px 20px 20px 20px;
   background-color: #ffb8ca;
   box-shadow: 0px 8px 30px rgba(212, 20, 68, 0.308);
@@ -210,7 +210,9 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 25px;
-  text-shadow: 5px 6px 9px #c97187;
+  // text-shadow: 5px 6px 9px #c97187;
+  text-shadow: 1px 0 1px rgb(255, 255, 255), 0 1px 1px rgb(255, 255, 255),
+    -1px 0 1px rgb(255, 255, 255), 0 -1px 1px rgb(255, 255, 255);
 }
 
 .modal__pre-title {

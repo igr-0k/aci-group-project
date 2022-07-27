@@ -46,7 +46,11 @@
           tincidunt.
         </p>
         <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button" class="about__btn" about-modal-open>
+        <button
+          type="button"
+          class="about__btn"
+          about-modal-open="about-modal-open"
+        >
           Read more
           <svg class="about__icon" width="8" height="10">
             <use href="/src/images/icon.svg#icon-Vector-1"></use>
@@ -55,10 +59,14 @@
       </div>
     </div>
   </div>
-  <div class="bacdrop is-hidden" about-modal>
+  <div class="bacdrop is-hidden" about-modal="about-modal">
     <div class="about__modal">
-      <button type="button" class="about__close-btn">
-        <svg class="about-close-svg" width="18" height="18" about-modal-close>
+      <button
+        type="button"
+        class="about__close-btn"
+        about-modal-close="about-modal-close"
+      >
+        <svg class="about-close-svg" width="18" height="18">
           <use href="/src/images/icon.svg#icon-close-modal-btn"></use>
         </svg>
       </button>
