@@ -66,6 +66,7 @@
 
 .reviews__slider .slick-dots li.slick-active button {
   background-image: url(../images/reviews/home.svg);
+  fill: $second-color;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -174,7 +175,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #c7133e;
+  background-color: $second-color;
   margin-bottom: 16px;
     @include tablet{
    margin-top: 4px;
@@ -190,7 +191,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #c7133e;
+  background-color: $second-color;
   margin-left: 10px;
 }
 
@@ -201,7 +202,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #c7133e;
+  background-color: $second-color;
   margin-right: 10px;
 }
 .reviews__name {
