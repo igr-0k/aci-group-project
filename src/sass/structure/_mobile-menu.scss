@@ -125,6 +125,14 @@
   }
 }
 
+.order-butn:hover,
+.order-butn:focus,
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #ecebeb;
+  transition: background-color 300ms linear;
+}
+
 .mob-menu__link {
   color: $second-color;
 }
