@@ -14,3 +14,7 @@ $('a').bind('click', function (e) {
   $('.active').removeClass('active');
   $(this).addClass('active');
 });
+
+$('.mob-menu__list li a').click(function () {
+  $('body').removeClass('no-scroll');
+});
