@@ -95,6 +95,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+    color: $second-color;
     border-color: transparent;
     background-color: $first-color;
     border-radius: 22px;
@@ -103,10 +104,6 @@
   @include desktop {
     width: 159px;
   }
-}
-
-.order-link {
-  color: $second-color;
 }
 
 .order-link__icon {
