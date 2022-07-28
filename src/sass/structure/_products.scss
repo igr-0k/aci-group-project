@@ -269,12 +269,12 @@
   height: 40px;
   border: 0px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $first-color;
 
   @include transitions(background-color);
 
   &:hover,
-  &:focus {
+  &.is-open:focus {
     background-color: #aaaaaa;
   }
 
