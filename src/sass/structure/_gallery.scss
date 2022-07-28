@@ -16,10 +16,6 @@
   margin: 0 auto;
 }
 
-.disabled {
-  pointer-events: none; /* делаем ссылку некликабельной */
-  cursor: pointer;
-}
 @media screen and (min-width: 319px) {
   .gallery__mob {
     display: none;
@@ -91,6 +87,13 @@
     position: absolute;
     top: 36%;
     left: 86.4%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .grid {
+    width: 480px;
+    height: 203.75px;
   }
 }
 
