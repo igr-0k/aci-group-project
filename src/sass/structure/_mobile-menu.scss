@@ -12,6 +12,8 @@
   height: 35px;
   background-color: rgba(255, 184, 202, 0.5);
   border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 150ms linear;
 
   @include tablet {
     position: static;
@@ -22,11 +24,11 @@
   }
 }
 
+.menu-btn-wrap:hover {
+  box-shadow: 0px 2px 6px rgba(212, 20, 67, 0.3);
+}
+
 .menu-btn {
-  // position: fixed;
-  // top: 19px;
-  // right: 20px;
-  // z-index: 2;
   padding: 0;
   border: none;
   border-color: transparent;
